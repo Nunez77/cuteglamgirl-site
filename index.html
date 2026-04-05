@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tips de belleza atemporales, outfits cute y consejos glam para chicas de 13-18 años.">
+    <title>CuteGlamGirl ✨ | Tu Glow-Up Empieza Aquí</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --pink: #FF6B9D;
+            --pink-light: #FFD6E8;
+            --pink-pale: #FFF0F6;
+            --purple: #C084FC;
+            --cream: #FFF8F2;
+            --dark: #1A0A14;
+            --gray: #6B5B66;
+        }
+
+        html { scroll-behavior: smooth; }
+        body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--dark); overflow-x: hidden; }
+        h1, h2, h3 { font-family: 'Fraunces', serif; }
+
+        /* NAVBAR */
+        nav {
+            position: sticky; top: 0; z-index: 100;
+            background: rgba(255,255,255,0.88); backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--pink-light);
+            padding: 16px 48px; display: flex; align-items: center; justify-content: space-between;
+        }
+        .nav-logo { display: flex; align-items: center; gap: 10px; }
+        .nav-logo h1 { font-size: 22px; color: var(--pink); letter-spacing: -0.5px; }
+        .nav-links { display: flex; gap: 32px; list-style: none; }
+        .nav-links a { text-decoration: none; color: var(--dark); font-size: 15px; font-weight: 500; transition: color .2s; }
+        .nav-links a:hover { color: var(--pink); }
+        .nav-cta {
+            background: var(--pink); color: #fff; padding: 10px 24px;
+            border-radius: 999px; text-decoration: none; font-weight: 600; font-size: 14px;
+            display: flex; align-items: center; gap: 8px; transition: transform .2s, background .2s;
+        }
+        .nav-cta:hover { background: #e05585; transform: translateY(-1px); }
+
+        /* HERO */
+        .hero {
+            min-height: 92vh; display: grid; grid-template-columns: 1fr 1fr;
+            align-items: center; gap: 60px; padding: 80px 60px; position: relative; overflow: hidden;
+        }
+        .hero::before {
+            content: ''; position: absolute; inset: 0; pointer-events: none;
+            background: radial-gradient(ellipse 70% 60% at 80% 50%, #FFD6E855, transparent 70%),
+                        radial-gradient(ellipse 50% 50% at 10% 80%, #C084FC22, transparent 60%);
+        }
+        .hero-badge {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: var(--pink-light); color: var(--pink);
+            padding: 6px 16px; border-radius: 999px; font-size: 13px; font-weight: 600;
+            margin-bottom: 24px; animation: fadeDown .6s ease both;
+        }
+        .hero h2 {
+            font-size: clamp(40px, 5vw, 66px); line-height: 1.05; letter-spacing: -2px;
+            margin-bottom: 20px; animation: fadeDown .7s .1s ease both;
+        }
+        .hero h2 em { color: var(--pink); font-style: italic; }
+        .hero p {
+            font-size: 18px; line-height: 1.7; color: var(--gray);
+            max-width: 480px; margin-bottom: 36px; animation: fadeDown .7s .2s ease both;
+        }
+        .hero-btns { display: flex; gap: 16px; flex-wrap: wrap; animation: fadeDown .7s .3s ease both; }
+        .btn-primary {
+            background: linear-gradient(135deg, var(--pink), var(--purple));
+            color: #fff; padding: 14px 32px; border-radius: 999px;
+            text-decoration: none; font-weight: 700; font-size: 16px;
+            box-shadow: 0 8px 32px #FF6B9D44; transition: transform .2s, box-shadow .2s;
+        }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 40px #FF6B9D66; }
+        .btn-secondary {
+            color: var(--dark); padding: 14px 28px; border-radius: 999px;
+            text-decoration: none; font-weight: 600; font-size: 16px;
+            border: 2px solid var(--pink-light); transition: border-color .2s, color .2s;
+        }
+        .btn-secondary:hover { border-color: var(--pink); color: var(--pink); }
+
+        .hero-visual { position: relative; animation: fadeLeft .8s .2s ease both; }
+        .hero-img-main {
+            width: 100%; aspect-ratio: 4/5; object-fit: cover;
+            border-radius: 40px 40px 120px 40px;
+            box-shadow: 0 32px 80px #FF6B9D33;
+        }
+        .hero-card {
+            position: absolute; bottom: 40px; left: -32px;
+            background: white; border-radius: 20px; padding: 16px 20px;
+            box-shadow: 0 16px 48px #00000018; display: flex; align-items: center; gap: 14px;
+            animation: pulse 3s ease-in-out infinite;
+        }
+        .hero-card-icon { font-size: 28px; }
+        .hero-card-text strong { display: block; font-size: 15px; font-weight: 700; }
+        .hero-card-text span { font-size: 12px; color: var(--gray); }
+        .hero-dot { position: absolute; border-radius: 50%; }
+        .hero-dot-1 { width: 20px; height: 20px; top: -12px; right: 40px; background: linear-gradient(135deg, var(--pink), var(--purple)); animation: bounce 2s ease infinite; }
+        .hero-dot-2 { width: 14px; height: 14px; bottom: 100px; right: -10px; background: var(--purple); animation: bounce 2.5s .5s ease infinite; }
+        .hero-dot-3 { width: 12px; height: 12px; top: 40%; left: -20px; background: #FFD700; animation: bounce 2s 1s ease infinite; }
+
+        /* STATS */
+        .stats {
+            background: var(--dark); color: #fff;
+            display: flex; justify-content: center; gap: 80px; padding: 32px 40px; flex-wrap: wrap;
+        }
+        .stat-item { text-align: center; }
+        .stat-item strong { display: block; font-size: 32px; font-family: 'Fraunces', serif; color: var(--pink); }
+        .stat-item span { font-size: 14px; color: #ffffff99; }
+
+        /* COMMON */
+        section { padding: 96px 60px; }
+        .section-tag {
+            display: inline-block; background: var(--pink-light); color: var(--pink);
+            padding: 4px 14px; border-radius: 999px; font-size: 12px; font-weight: 700;
+            letter-spacing: 1px; text-transform: uppercase; margin-bottom: 16px;
+        }
+        .section-title { font-size: clamp(32px, 4vw, 52px); letter-spacing: -1.5px; line-height: 1.1; margin-bottom: 16px; }
+        .section-sub { font-size: 17px; color: var(--gray); max-width: 540px; line-height: 1.6; }
+
+        /* TIPS */
+        #tips { background: #fff; }
+        .tips-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 56px; gap: 20px; flex-wrap: wrap; }
+        .tips-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+        .tip-card { background: var(--cream); border-radius: 28px; overflow: hidden; transition: transform .3s, box-shadow .3s; }
+        .tip-card:hover { transform: translateY(-6px); box-shadow: 0 24px 60px #FF6B9D22; }
+        .tip-card img { width: 100%; height: 220px; object-fit: cover; display: block; }
+        .tip-card-body { padding: 28px; }
+        .tip-tag { font-size: 11px; font-weight: 700; color: var(--pink); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; display: block; }
+        .tip-card-body h3 { font-size: 22px; letter-spacing: -0.5px; margin-bottom: 10px; line-height: 1.2; }
+        .tip-card-body p { font-size: 14px; color: var(--gray); line-height: 1.6; margin-bottom: 20px; }
+        .tip-link { color: var(--pink); font-weight: 600; font-size: 14px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; transition: gap .2s; }
+        .tip-link:hover { gap: 10px; }
+
+        /* BLOG */
+        #blog { background: var(--pink-pale); }
+        .blog-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 20px; margin-top: 56px; }
+        .blog-card { background: #fff; border-radius: 24px; overflow: hidden; transition: transform .3s, box-shadow .3s; }
+        .blog-card:hover { transform: translateY(-4px); box-shadow: 0 20px 50px #00000012; }
+        .blog-card.featured { grid-row: span 2; }
+        .blog-card img { width: 100%; object-fit: cover; display: block; }
+        .blog-card.featured img { height: 300px; }
+        .blog-card:not(.featured) img { height: 160px; }
+        .blog-body { padding: 24px; }
+        .blog-meta { font-size: 12px; color: var(--gray); margin-bottom: 10px; display: flex; gap: 12px; }
+        .blog-body h3 { font-size: 18px; line-height: 1.3; letter-spacing: -0.3px; margin-bottom: 12px; }
+        .blog-card.featured .blog-body h3 { font-size: 24px; }
+        .read-link { font-size: 13px; font-weight: 600; color: var(--pink); text-decoration: none; }
+
+        /* TIENDA */
+        #tienda { background: var(--dark); color: #fff; }
+        #tienda .section-title { color: #fff; }
+        #tienda .section-sub { color: #ffffff88; }
+        .shop-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 56px; }
+        .shop-card {
+            background: #ffffff0d; border: 1px solid #ffffff18; border-radius: 24px;
+            overflow: hidden; transition: transform .3s, border-color .3s; text-decoration: none; color: #fff;
+        }
+        .shop-card:hover { transform: translateY(-4px); border-color: var(--pink); }
+        .shop-card img { width: 100%; height: 200px; object-fit: cover; display: block; }
+        .shop-body { padding: 20px; }
+        .shop-body h4 { font-size: 15px; font-weight: 600; margin-bottom: 6px; }
+        .shop-price { font-size: 13px; color: var(--pink); font-weight: 600; }
+        .shop-badge { display: inline-block; background: #ffffff14; font-size: 11px; padding: 3px 10px; border-radius: 999px; margin-top: 8px; color: #ffffff88; }
+
+        /* ABOUT */
+        #nosotras {
+            background: linear-gradient(135deg, var(--pink) 0%, var(--purple) 100%);
+            color: #fff; text-align: center;
+        }
+        #nosotras .section-title { color: #fff; margin-bottom: 20px; }
+        #nosotras p { font-size: 18px; line-height: 1.8; color: #ffffffcc; max-width: 640px; margin: 0 auto 32px; }
+        .about-img {
+            width: 140px; height: 140px; border-radius: 50%; object-fit: cover;
+            border: 4px solid #ffffff44; margin: 0 auto 32px; display: block;
+            box-shadow: 0 8px 32px #00000033;
+        }
+        .social-icons { display: flex; justify-content: center; gap: 24px; font-size: 28px; }
+        .social-icons a { color: #fff; opacity: 0.8; transition: opacity .2s, transform .2s; text-decoration: none; }
+        .social-icons a:hover { opacity: 1; transform: scale(1.15); }
+
+        /* FOOTER */
+        footer { background: #0D0610; color: #fff; text-align: center; padding: 48px 40px; }
+        footer .logo { font-family: 'Fraunces', serif; font-size: 24px; color: var(--pink); margin-bottom: 8px; }
+        footer p { color: #ffffff55; font-size: 14px; margin-bottom: 24px; }
+        .footer-links { display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; }
+        .footer-links a { color: #ffffff55; font-size: 13px; text-decoration: none; transition: color .2s; }
+        .footer-links a:hover { color: var(--pink); }
+
+        /* ANIMATIONS */
+        @keyframes fadeDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeLeft {
+            from { opacity: 0; transform: translateX(30px); }
+            to   { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50%       { transform: translateY(-8px); }
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50%       { transform: scale(1.02); }
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            nav { padding: 14px 24px; }
+            .nav-links { display: none; }
+            .hero { grid-template-columns: 1fr; padding: 60px 24px; min-height: auto; }
+            .hero-visual { order: -1; }
+            .hero-img-main { border-radius: 32px; }
+            .hero-card { left: 8px; bottom: 16px; }
+            section { padding: 64px 24px; }
+            .tips-grid, .blog-grid { grid-template-columns: 1fr; }
+            .blog-card.featured { grid-row: auto; }
+            .shop-grid { grid-template-columns: 1fr 1fr; }
+            .stats { gap: 40px; padding: 32px 24px; }
+            .tips-header { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav-logo">
+            <span style="font-size:26px">✨</span>
+            <h1>CuteGlamGirl</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#tips">Tips</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#tienda">Tienda</a></li>
+            <li><a href="#libros">Libros</a></li>
+            <li><a href="#nosotras">Sobre Mí</a></li>
+        </ul>
+        <a href="#tienda" class="nav-cta"><i class="fas fa-shopping-bag"></i> Ver Favoritos</a>
+    </nav>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+        <div>
+            <div class="hero-badge">✨ Tips que realmente funcionan</div>
+            <h2>Tu <em>glow-up</em><br>empieza aquí, girl</h2>
+            <p>Skincare fácil, maquillaje natural y outfits cute para chicas de 13 a 18 años. Sin drama, sin gastar de más. Solo tú, siendo la mejor versión de ti.</p>
+            <div class="hero-btns">
+                <a href="#tips" class="btn-primary">💄 Quiero mis tips →</a>
+                <a href="#blog" class="btn-secondary">Explorar blog</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-dot hero-dot-1"></div>
+            <div class="hero-dot hero-dot-2"></div>
+            <div class="hero-dot hero-dot-3"></div>
+            <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=700&q=80" alt="Chica glam cute" class="hero-img-main">
+            <div class="hero-card">
+                <div class="hero-card-icon">🌟</div>
+                <div class="hero-card-text">
+                    <strong>Tips que duran para siempre</strong>
+                    <span>Nada de trends que pasan en 3 días</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <div class="stats">
+        <div class="stat-item"><strong>+50</strong><span>Tips atemporales</span></div>
+        <div class="stat-item"><strong>13–18</strong><span>Años de edad</span></div>
+        <div class="stat-item"><strong>100%</strong><span>Real & sin filtros</span></div>
+        <div class="stat-item"><strong>❤️</strong><span>Hecho con amor</span></div>
+    </div>
+
+    <!-- TIPS -->
+    <section id="tips">
+        <div class="tips-header">
+            <div>
+                <div class="section-tag">✨ Evergreen Tips</div>
+                <h2 class="section-title">Lo que toda teen<br>debería saber</h2>
+            </div>
+            <p class="section-sub">Consejos que no caducan. Da igual si es lunes o viernes, si tienes 13 o 18: esto siempre funciona.</p>
+        </div>
+        <div class="tips-grid">
+            <div class="tip-card">
+                <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&q=80" alt="Skincare teen">
+                <div class="tip-card-body">
+                    <span class="tip-tag">Skincare</span>
+                    <h3>Rutina de 5 minutos para piel radiante</h3>
+                    <p>Limpieza, hidratación y SPF. La trifecta que toda teen necesita antes de salir de casa.</p>
+                    <a href="#" onclick="showArticle('skincare5min');return false;" class="tip-link">Leer el tip <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="tip-card">
+                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&q=80" alt="Maquillaje natural">
+                <div class="tip-card-body">
+                    <span class="tip-tag">Maquillaje</span>
+                    <h3>Look glowy para la escuela en 7 minutos</h3>
+                    <p>Natural, fresco y cute. Productos que ya tienes y un resultado que dura todo el día.</p>
+                    <a href="#" onclick="showArticle('maquillaje7min');return false;" class="tip-link">Leer el tip <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="tip-card">
+                <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=600&q=80" alt="Outfits cute">
+                <div class="tip-card-body">
+                    <span class="tip-tag">Moda</span>
+                    <h3>15 outfits cute con ropa que ya tienes</h3>
+                    <p>Para de decir que no tienes qué ponerte. Con esto vas a sorprender hasta a ti misma.</p>
+                    <a href="#" onclick="showArticle('outfits15');return false;" class="tip-link">Leer el tip <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog">
+        <div class="section-tag">📖 Blog CuteGlam</div>
+        <h2 class="section-title">Léeme cuando<br>necesites inspo</h2>
+        <div class="blog-grid">
+            <div class="blog-card featured">
+                <img src="https://images.unsplash.com/photo-1487412912498-0447578fcca8?w=700&q=80" alt="Skincare teens">
+                <div class="blog-body">
+                    <div class="blog-meta"><span>Skincare</span><span>•</span><span>8 min lectura</span></div>
+                    <h3>10 errores de skincare que todas las teens cometen (y cómo evitarlos)</h3>
+                    <a href="#" onclick="showArticle('errores10');return false;" class="read-link">Leer ahora →</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="https://images.unsplash.com/photo-1519415943484-9fa1873496d4?w=400&q=80" alt="Maquillaje">
+                <div class="blog-body">
+                    <div class="blog-meta"><span>Maquillaje</span><span>•</span><span>6 min</span></div>
+                    <h3>Maquillaje de 5 minutos perfecto para la escuela</h3>
+                    <a href="#" onclick="showArticle('maquillaje7min');return false;" class="read-link">Leer ahora →</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=400&q=80" alt="Cabello">
+                <div class="blog-body">
+                    <div class="blog-meta"><span>Cabello</span><span>•</span><span>7 min</span></div>
+                    <h3>Cabello sano y brillante sin gastar mucho</h3>
+                    <a href="#" onclick="showArticle('cabello');return false;" class="read-link">Leer ahora →</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400&q=80" alt="Confianza teen">
+                <div class="blog-body">
+                    <div class="blog-meta"><span>Bienestar</span><span>•</span><span>5 min</span></div>
+                    <h3>Cómo sentirte glam y segura de ti misma</h3>
+                    <a href="#" onclick="showArticle('confianza');return false;" class="read-link">Leer ahora →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIENDA -->
+    <section id="tienda">
+        <div class="section-tag" style="background:#ffffff18;color:#fff;">🛍️ Tienda</div>
+        <h2 class="section-title">Mis favoritos<br>en Amazon</h2>
+        <p class="section-sub">Productos que uso y amo. Gano una pequeña comisión si compras — ¡gracias por apoyarme!</p>
+        <div class="shop-grid">
+            <a href="https://www.amazon.com/?tag=tuenlaceafiliado-20" target="_blank" class="shop-card">
+                <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=400&q=80" alt="Paleta sombras">
+                <div class="shop-body">
+                    <h4>Paleta de sombras naturales</h4>
+                    <div class="shop-price">Desde $12.99</div>
+                    <div class="shop-badge">Ideal para diario</div>
+                </div>
+            </a>
+            <a href="https://www.amazon.com/?tag=tuenlaceafiliado-20" target="_blank" class="shop-card">
+                <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&q=80" alt="Serum">
+                <div class="shop-body">
+                    <h4>Sérum vitamina C para glow</h4>
+                    <div class="shop-price">Desde $14.99</div>
+                    <div class="shop-badge">Piel radiante</div>
+                </div>
+            </a>
+            <a href="https://www.amazon.com/?tag=tuenlaceafiliado-20" target="_blank" class="shop-card">
+                <img src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?w=400&q=80" alt="Mascara">
+                <div class="shop-body">
+                    <h4>Máscara de pestañas waterproof</h4>
+                    <div class="shop-price">Desde $9.99</div>
+                    <div class="shop-badge">Look de muñeca</div>
+                </div>
+            </a>
+            <a href="https://www.amazon.com/?tag=tuenlaceafiliado-20" target="_blank" class="shop-card">
+                <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=400&q=80" alt="Crema coreana">
+                <div class="shop-body">
+                    <h4>Crema hidratante coreana</h4>
+                    <div class="shop-price">Desde $11.99</div>
+                    <div class="shop-badge">Piel suave todo el día</div>
+                </div>
+            </a>
+        </div>
+        <div style="margin-top:40px;background:#ffffff08;border:1px solid #ffffff14;border-radius:16px;padding:20px 28px;text-align:center;max-width:700px;margin-left:auto;margin-right:auto;margin-top:40px;">
+            <p style="color:#ffffffbb;font-size:13px;line-height:1.7;">
+                ⭐ Todos los productos mostrados son <strong style="color:#fff;">enlaces de afiliados de Amazon</strong>. Si compras a través de ellos, gano una comisión pequeñita sin que te cueste nada extra a ti. Los precios pueden variar. ¡Gracias por apoyarme! 💕
+            </p>
+        </div>
+    </section>
+
+<!-- SECCIÓN: Libros Recomendados -->
+<!-- Pegar ANTES del <section id="nosotras"> o antes del footer -->
+
+<section id="libros" style="padding: 4rem 1.5rem; background: #fff0f5;">
+  <div style="max-width: 1100px; margin: 0 auto;">
+
+    <div style="text-align: center; margin-bottom: 2.5rem;">
+      <span style="font-size: 2rem;">📚</span>
+      <h2 style="font-size: 2rem; font-weight: 700; color: #1a1a2e; margin: 0.5rem 0 0.75rem;">Libros que te van a cambiar</h2>
+      <p style="color: #555; font-size: 1rem; max-width: 520px; margin: 0 auto; line-height: 1.6;">
+        Más que skincare, el glow-up real viene de adentro. Estos libros son los que yo leería (o ya leí) para sentirme más segura, más yo.
+      </p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.25rem;">
+
+      <!-- Libro 1 -->
+      <div style="background: #fff; border-radius: 16px; padding: 1.25rem; border: 1px solid #ffd6e7; display: flex; flex-direction: column; gap: 0.75rem;">
+        <div style="font-size: 2rem; text-align: center;">💬</div>
+        <h3 style="font-size: 0.95rem; font-weight: 700; color: #1a1a2e; line-height: 1.4; margin: 0;">100 Afirmaciones Positivas para Niñas</h3>
+        <p style="font-size: 0.82rem; color: #666; margin: 0; line-height: 1.5;">Construye tu autoestima y confianza con afirmaciones que de verdad se sienten tuyas.</p>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto;">
+          <a href="https://www.amazon.com/dp/B0DHV4THHQ" target="_blank" style="font-size: 0.78rem; padding: 5px 12px; border-radius: 20px; background: #ff6b9d; color: #fff; text-decoration: none; font-weight: 600;">Kindle</a>
+          <a href="https://www.amazon.com/dp/B0DJDN5S8N" target="_blank" style="font-size: 0.78rem; padding: 5px 12px; border-radius: 20px; background: #fff0f5; color: #ff6b9d; border: 1px solid #ff6b9d; text-decoration: none; font-weight: 600;">Impreso</a>
+        </div>
+      </div>
+
+      <!-- Libro 2 -->
+      <div style="background: #fff; border-radius: 16px; padding: 1.25rem; border: 1px solid #ffd6e7; display: flex; flex-direction: column; gap: 0.75rem;">
+        <div style="font-size: 2rem; text-align: center;">🙅‍♀️</div>
+        <h3 style="font-size: 0.95rem; font-weight: 700; color: #1a1a2e; line-height: 1.4; margin: 0;">Así digo que no</h3>
+        <p style="font-size: 0.82rem; color: #666; margin: 0; line-height: 1.5;">Historias para aprender a poner límites con respeto. Porque decir que no también es quererte.</p>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto;">
+          <a href="https://www.amazon.com/dp/B0G1KPSFRC" target="_blank" style="font-size: 0.78rem; padding: 5px 12px; border-radius: 20px; background: #ff6b9d; color: #fff; text-decoration: none; font-weight: 600;">Kindle</a>
+        </div>
+      </div>
+
+      <!-- Libro 3 -->
+      <div style="background: #fff; border-radius: 16px; padding: 1.25rem; border: 1px solid #ffd6e7; display: flex; flex-direction: column; gap: 0.75rem;">
+        <div style="font-size: 2rem; text-align: center;">✨</div>
+        <h3 style="font-size: 0.95rem; font-weight: 700; color: #1a1a2e; line-height: 1.4; margin: 0;">¿Y Si Pudieras Apagar la Pena?</h3>
+        <p style="font-size: 0.82rem; color: #666; margin: 0; line-height: 1.5;">Enciende tu valentía. Para cuando sientes que todo pesa demasiado y quieres seguir de todas formas.</p>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto;">
+          <a href="https://www.amazon.com/dp/B0DRNNNVY9" target="_blank" style="font-size: 0.78rem; padding: 5px 12px; border-radius: 20px; background: #ff6b9d; color: #fff; text-decoration: none; font-weight: 600;">Kindle</a>
+          <a href="https://www.amazon.com/dp/B0DRVY6B3Z" target="_blank" style="font-size: 0.78rem; padding: 5px 12px; border-radius: 20px; background: #fff0f5; color: #ff6b9d; border: 1px solid #ff6b9d; text-decoration: none; font-weight: 600;">Impreso</a>
+        </div>
+      </div>
+
+      <!-- Libro 4 -->
+      <div style="background: #fff; border-radius: 16px; padding: 1.25rem; border: 1px solid #ffd6e7; display: flex; flex-direction: column; gap: 0.75rem;">
+        <div style="font-size: 2rem; text-align: center;">🎬</div>
+        <h3 style="font-size: 0.95rem; font-weight: 700; color: #1a1a2e; line-height: 1.4; margin: 0;">En Tu Película, Tú Eres el Héroe</h3>
+        <p style="font-size: 0.82rem; color: #666; margin: 0; line-height: 1.5;">Cómo escribir, dirigir y protagonizar la mejor aventura de tu vida. Spoiler: ya tienes todo lo que necesitas.</p>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto;">
+          <a href="https://www.amazon.com/dp/B0DSB1ZRHB" target="_blank" style="font-size: 0.78rem; padding: 5px 12px; border-radius: 20px; background: #ff6b9d; color: #fff; text-decoration: none; font-weight: 600;">Kindle</a>
+          <a href="https://www.amazon.com/dp/B0DSBYCHVZ" target="_blank" style="font-size: 0.78rem; padding: 5px 12px; border-radius: 20px; background: #fff0f5; color: #ff6b9d; border: 1px solid #ff6b9d; text-decoration: none; font-weight: 600;">Impreso</a>
+        </div>
+      </div>
+
+      <!-- Libro 5 -->
+      <div style="background: #fff; border-radius: 16px; padding: 1.25rem; border: 1px solid #ffd6e7; display: flex; flex-direction: column; gap: 0.75rem;">
+        <div style="font-size: 2rem; text-align: center;">🧠</div>
+        <h3 style="font-size: 0.95rem; font-weight: 700; color: #1a1a2e; line-height: 1.4; margin: 0;">Trucos para Cuidar tu Mente</h3>
+        <p style="font-size: 0.82rem; color: #666; margin: 0; line-height: 1.5;">Descubre cómo pensar, descansar y crear pueden cambiar tu vida. El skincare mental que nadie te enseña.</p>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto;">
+          <a href="https://www.amazon.com/dp/B0DSCS4FZS" target="_blank" style="font-size: 0.78rem; padding: 5px 12px; border-radius: 20px; background: #ff6b9d; color: #fff; text-decoration: none; font-weight: 600;">Kindle</a>
+        </div>
+      </div>
+
+      <!-- Libro 6 -->
+      <div style="background: #fff; border-radius: 16px; padding: 1.25rem; border: 1px solid #ffd6e7; display: flex; flex-direction: column; gap: 0.75rem;">
+        <div style="font-size: 2rem; text-align: center;">💪</div>
+        <h3 style="font-size: 0.95rem; font-weight: 700; color: #1a1a2e; line-height: 1.4; margin: 0;">El Poder de Ser Valiente está Dentro de Ti</h3>
+        <p style="font-size: 0.82rem; color: #666; margin: 0; line-height: 1.5;">Para enfrentar tus retos con una actitud positiva. Porque la valentía no es no tener miedo — es seguir aunque lo tengas.</p>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto;">
+          <a href="https://www.amazon.com/dp/B0DQ9DNWJL" target="_blank" style="font-size: 0.78rem; padding: 5px 12px; border-radius: 20px; background: #ff6b9d; color: #fff; text-decoration: none; font-weight: 600;">Kindle</a>
+        </div>
+      </div>
+
+      <!-- Libro 7 -->
+      <div style="background: #fff; border-radius: 16px; padding: 1.25rem; border: 1px solid #ffd6e7; display: flex; flex-direction: column; gap: 0.75rem;">
+        <div style="font-size: 2rem; text-align: center;">🌟</div>
+        <h3 style="font-size: 0.95rem; font-weight: 700; color: #1a1a2e; line-height: 1.4; margin: 0;">Kailo's Life Toolkit</h3>
+        <p style="font-size: 0.82rem; color: #666; margin: 0; line-height: 1.5;">5 herramientas para ser una chica segura y feliz. Simple, directo y con actividades reales.</p>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto;">
+          <a href="https://www.amazon.com/dp/B0DLNZQYFM" target="_blank" style="font-size: 0.78rem; padding: 5px 12px; border-radius: 20px; background: #ff6b9d; color: #fff; text-decoration: none; font-weight: 600;">Kindle</a>
+          <a href="https://www.amazon.com/dp/B0DQKR473S" target="_blank" style="font-size: 0.78rem; padding: 5px 12px; border-radius: 20px; background: #fff0f5; color: #ff6b9d; border: 1px solid #ff6b9d; text-decoration: none; font-weight: 600;">Impreso</a>
+        </div>
+      </div>
+
+    </div>
+
+    <p style="text-align: center; font-size: 0.78rem; color: #999; margin-top: 2rem;">
+      Los links llevan directo a Amazon. Próximamente activamos afiliados 💕
+    </p>
+
+  </div>
+</section>
+
+<!-- FIN SECCIÓN LIBROS -->
+
+    <!-- SOBRE NOSOTRAS -->
+    <section id="nosotras">
+        <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=300&q=80" alt="CuteGlamGirl" class="about-img">
+        <div class="section-tag" style="background:#ffffff25;color:#fff;">💕 Sobre Mí</div>
+        <h2 class="section-title">¡Hola! Soy CuteGlamGirl ✨</h2>
+        <p>Tengo 13 años y amo todo lo cute y glam. Mi papá y yo creamos este espacio para compartir tips reales, fáciles y que siempre funcionan. Sin modas de una semana — solo consejos que te acompañan para siempre.</p>
+        <div class="social-icons">
+            <span style="opacity:0.35;display:flex;flex-direction:column;align-items:center;gap:4px;">
+                <i class="fab fa-tiktok" style="font-size:28px;"></i>
+                <span style="font-size:10px;letter-spacing:1px;text-transform:uppercase;">Coming soon</span>
+            </span>
+            <span style="opacity:0.35;display:flex;flex-direction:column;align-items:center;gap:4px;">
+                <i class="fab fa-instagram" style="font-size:28px;"></i>
+                <span style="font-size:10px;letter-spacing:1px;text-transform:uppercase;">Coming soon</span>
+            </span>
+            <span style="opacity:0.35;display:flex;flex-direction:column;align-items:center;gap:4px;">
+                <i class="fab fa-pinterest" style="font-size:28px;"></i>
+                <span style="font-size:10px;letter-spacing:1px;text-transform:uppercase;">Coming soon</span>
+            </span>
+        </div>
+        <p style="margin-top:16px;font-size:14px;">¡Pronto en todas las redes! ✨</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="logo">CuteGlamGirl</div>
+        <p>Hecho con mucho amor para todas las glam girls del mundo ✨ © 2026</p>
+        <div class="footer-links">
+            <a href="#" onclick="showPolitica();return false;">Política de Afiliados</a>
+            <a href="#">Contacto</a>
+        </div>
+        <div style="margin-top:32px;padding-top:24px;border-top:1px solid #ffffff15;max-width:640px;margin-left:auto;margin-right:auto;">
+            <p style="color:#ffffff66;font-size:12px;line-height:1.8;text-align:center;">
+                ⭐ Este sitio contiene <strong style="color:#ffffff99;">enlaces de afiliados de Amazon</strong>. Si haces clic en ellos y compras algo, recibo una pequeña comisión sin que te cueste nada extra a ti. Esto me ayuda a seguir creando contenido gratis y útil para todas las glam girls ✨ ¡Gracias por apoyarme!
+            </p>
+        </div>
+    </footer>
+
+
+
+    <!-- POLÍTICA DE AFILIADOS OVERLAY -->
+    <div id="politica-overlay" style="display:none;position:fixed;inset:0;z-index:300;background:var(--cream);overflow-y:auto;">
+        <div style="max-width:760px;margin:0 auto;padding:40px 24px 80px;">
+            <button onclick="hidePolitica()" style="display:inline-flex;align-items:center;gap:8px;background:var(--pink-light);color:var(--pink);border:none;border-radius:999px;padding:10px 20px;font-family:'DM Sans',sans-serif;font-weight:600;font-size:14px;cursor:pointer;margin-bottom:40px;">
+                ← Volver al inicio
+            </button>
+            <div class="article-tag">Legal</div>
+            <h2 class="article-title">Política de Afiliados</h2>
+            <p style="font-size:13px;color:var(--gray);margin-bottom:32px;">Última actualización: marzo 2026</p>
+            <div class="article-body">
+                <p>CuteGlamGirl.com es un sitio web gestionado por una chica de 13 años y su papá. Utilizamos enlaces de afiliados de Amazon Associates y otros programas similares.</p>
+                <h3>¿Qué son los enlaces de afiliados?</h3>
+                <p>Cuando haces clic en un enlace de producto en este sitio y compras en Amazon, yo recibo una pequeña comisión. A ti no te cuesta absolutamente nada más — el precio que ves en Amazon es exactamente el mismo. Es una forma de que el sitio se mantenga gratis y yo pueda seguir creando tips de belleza y moda para todas ustedes.</p>
+                <h3>¿Cómo identifico los enlaces de afiliados?</h3>
+                <p>Todos los enlaces de productos que llevan a Amazon son enlaces de afiliados. Los identificamos con avisos como "enlace de afiliado", "gano una pequeña comisión" o el símbolo ⭐ en las notas al pie de cada sección de productos.</p>
+                <h3>Transparencia total</h3>
+                <ul>
+                    <li>Los enlaces están marcados claramente en cada sección de productos.</li>
+                    <li>Solo recomiendo productos que yo misma usaría o que creo que les pueden gustar a otras teens.</li>
+                    <li>Mi opinión siempre es honesta — no recomiendo algo solo por la comisión.</li>
+                    <li>Las comisiones que recibo no afectan el precio que tú pagas.</li>
+                </ul>
+                <h3>Programas de afiliados que usamos</h3>
+                <p>Actualmente participamos en <strong>Amazon Associates</strong>, el programa de afiliados de Amazon. En el futuro podríamos sumar otros programas similares, y lo haremos saber claramente.</p>
+                <div class="article-tip-box">
+                    <strong>💕 Nota de CuteGlamGirl</strong>
+                    Gracias por leer esto y por apoyar este pequeño proyecto glam. Cada clic y cada compra me ayuda a seguir creando contenido gratis y útil para ti. ¡Significa muchísimo para mí! ✨
+                </div>
+                <p style="font-size:14px;color:var(--gray);">¿Tienes alguna duda sobre esta política? Contáctanos a través de la página de contacto.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showPolitica(){
+            const ov=document.getElementById('politica-overlay');
+            ov.style.display='block';
+            ov.scrollTop=0;
+            document.body.style.overflow='hidden';
+        }
+        function hidePolitica(){
+            document.getElementById('politica-overlay').style.display='none';
+            document.body.style.overflow='';
+        }
+    </script>
+
+    <!-- ARTICLE OVERLAY -->
+    <div id="article-overlay" style="display:none;position:fixed;inset:0;z-index:200;background:var(--cream);overflow-y:auto;">
+        <div style="max-width:760px;margin:0 auto;padding:40px 24px 80px;">
+            <button onclick="hideArticle()" style="display:inline-flex;align-items:center;gap:8px;background:var(--pink-light);color:var(--pink);border:none;border-radius:999px;padding:10px 20px;font-family:'DM Sans',sans-serif;font-weight:600;font-size:14px;cursor:pointer;margin-bottom:40px;">
+                ← Volver al inicio
+            </button>
+            <div id="article-content"></div>
+        </div>
+    </div>
+
+    <style>
+        .article-hero-img{width:100%;height:360px;object-fit:cover;border-radius:24px;margin-bottom:32px;}
+        .article-tag{display:inline-block;background:var(--pink-light);color:var(--pink);padding:4px 14px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:16px;}
+        .article-title{font-family:'Fraunces',serif;font-size:clamp(28px,4vw,44px);letter-spacing:-1.5px;line-height:1.1;margin-bottom:16px;}
+        .article-meta{font-size:13px;color:var(--gray);margin-bottom:32px;display:flex;gap:16px;}
+        .article-body{font-size:17px;line-height:1.8;color:#333;}
+        .article-body h3{font-family:'Fraunces',serif;font-size:24px;margin:36px 0 12px;color:var(--dark);}
+        .article-body p{margin-bottom:18px;}
+        .article-body ul{padding-left:24px;margin-bottom:18px;}
+        .article-body ul li{margin-bottom:10px;}
+        .article-tip-box{background:var(--pink-light);border-left:4px solid var(--pink);border-radius:0 16px 16px 0;padding:20px 24px;margin:28px 0;}
+        .article-tip-box strong{color:var(--pink);display:block;margin-bottom:6px;font-size:13px;text-transform:uppercase;letter-spacing:1px;}
+    </style>
+
+    <script>
+        const articles = {
+            skincare5min:{tag:'Skincare',title:'Rutina de skincare de 5 minutos para piel radiante',meta:['Skincare','5 min lectura','Tip atemporal'],img:'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&q=80',body:`<p>Tienes 5 minutos antes de salir? Es todo lo que necesitas para tener la piel mas bonita de la clase. Esta rutina es simple, funciona a cualquier edad y no requiere gastar mucho.</p><h3>Paso 1: Limpieza (1 min)</h3><p>Usa un limpiador suave con agua tibia. Nada de jabon de barra: reseca tu piel. Busca uno en gel o espuma que diga "para piel sensible". Masajea en circulos por 30 segundos y enjuaga bien.</p><div class="article-tip-box"><strong>Pro tip</strong>El agua muy caliente abre los poros pero tambien irrita. Usa agua tibia, no caliente.</div><h3>Paso 2: Hidratante ligero (2 min)</h3><p>Con la piel todavia un poco humeda, aplica tu hidratante. Una cantidad del tamano de un chicharo es suficiente. Los hidratantes con acido hialuronico son los mejores para teens porque hidratan sin tapar los poros.</p><h3>Paso 3: Protector solar (2 min)</h3><p>Este es el paso que mas teens se saltan y es el mas importante. El sol dana la piel incluso en dias nublados. Usa SPF 30 minimo, todos los dias, todo el ano. Los protectores en gel no se sienten pesados y no dejan cara blanca.</p><div class="article-tip-box"><strong>Sabias que?</strong>El 80% del dano solar ocurre antes de los 18 anos. Empezar tu rutina ahora es el mejor regalo que le puedes dar a tu piel del futuro.</div><h3>Y en la noche...</h3><p>Agrega un paso extra: desmaqu&iacute;llate y aplica una crema hidratante un poco mas nutritiva. Dormir con la cara limpia es el secreto de la piel mas bonita.</p>`},
+            maquillaje7min:{tag:'Maquillaje',title:'Look glowy para la escuela en 7 minutos',meta:['Maquillaje','6 min lectura','Tip atemporal'],img:'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80',body:`<p>Maquillaje para la escuela tiene una regla de oro: que parezca que no traes nada, pero que te veas radiante. Este look lo logras en 7 minutos exactos.</p><h3>Minuto 1-2: BB Cream</h3><p>Para teens, una BB cream es mejor que una base pesada. Empareja el tono de tu piel sin verse maquillada. Aplica con los dedos o una esponjita humeda y difumina bien hacia el cuello.</p><div class="article-tip-box"><strong>Pro tip</strong>Si tienes granitos, cubrelos con un poco de corrector antes de la BB cream. Ponlo dando pequenos toquecitos, nunca frotando.</div><h3>Minuto 3: Cejas</h3><p>Las cejas enmarcan toda tu cara. Define su forma natural con un lapiz del color de tu cabello. Movimientos cortos imitando los pelos. Difumina al final con el cepillo del lapiz.</p><h3>Minuto 4-5: Iluminador</h3><p>Un toque de iluminador en el arco de la ceja, el lagrimal, la punta de la nariz y el arco de cupido. Eso es todo lo que necesitas para el efecto glowy. Si no tienes iluminador, una sombra champagne funciona igual.</p><h3>Minuto 6: Mascara de pestanas</h3><p>Una capa en las pestanas superiores abre los ojos al instante. Aplica en zigzag desde la raiz hacia las puntas. Una capa es suficiente para el look natural.</p><h3>Minuto 7: Lip gloss</h3><p>Un gloss transparente o un labial nude termina el look perfecto. Humedo, natural, cute. Lista!</p>`},
+            outfits15:{tag:'Moda',title:'15 outfits cute con ropa que ya tienes',meta:['Moda','7 min lectura','Tip atemporal'],img:'https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=800&q=80',body:`<p>El secreto de las chicas que siempre se ven bien no es tener mucha ropa, es saber combinar lo que ya tienen. Aqui van 15 combos que funcionan con prendas basicas.</p><h3>Los basicos que necesitas</h3><p>Jeans oscuros, jeans claros, playera blanca, playera negra, sudadera neutra, tenis blancos y una prenda de color. Con eso construyes cualquier look de esta lista.</p><h3>Para la escuela</h3><ul><li><strong>1. Classic cool:</strong> Jeans oscuros + playera blanca + tenis blancos + cadena delgada.</li><li><strong>2. Cozy chic:</strong> Sudadera beige + jeans skinny + tenis blancos + bolsa pequena.</li><li><strong>3. Monocromatico:</strong> Todo en un mismo tono. Se ve sofisticado y es facilisimo.</li><li><strong>4. Pop de color:</strong> Outfit neutro + accesorio de color brillante (aretes, mochila, scrunchie).</li><li><strong>5. Layering facil:</strong> Camiseta + camisa de cuadros abierta encima + jeans. Ata la camisa en la cintura.</li></ul><div class="article-tip-box"><strong>Regla de oro</strong>Si no sabes que ponerte, elige dos colores maximo y un accesorio. Menos es mas.</div><h3>Para salir con amigas</h3><ul><li><strong>6. Chic casual:</strong> Jeans blancos + top de color + sandalias.</li><li><strong>7. Sporty glam:</strong> Leggings + crop top + chaqueta de mezclilla + tenis.</li><li><strong>8. Vintage vibes:</strong> Jeans mom + playera tucked in + cinturon delgado + tenis de plataforma.</li><li><strong>9. Coquette:</strong> Falda plisada + blusa de lazos + ballet flats.</li><li><strong>10. Street style:</strong> Pantalon cargo + crop hoodie + tenis chunky.</li></ul><h3>Para eventos especiales</h3><ul><li><strong>11. Elegante sencillo:</strong> Pantalon negro de tela + blusa simple + mocasin.</li><li><strong>12. Floral forever:</strong> Vestido floral + denim jacket + tenis blancos.</li><li><strong>13. All black glam:</strong> Todo negro con texturas diferentes (jean + top satinado + botines).</li><li><strong>14. Pastel dream:</strong> Dos pasteles cercanos en el circulo cromatico (lila + rosa, menta + celeste).</li><li><strong>15. Denim on denim:</strong> Jeans + chaqueta de mezclilla de tono diferente.</li></ul>`},
+            errores10:{tag:'Skincare',title:'10 errores de skincare que todas las teens cometen',meta:['Skincare','8 min lectura','Tip atemporal'],img:'https://images.unsplash.com/photo-1487412912498-0447578fcca8?w=800&q=80',body:`<p>No es tu culpa, nadie nos ensena skincare en la escuela. Pero algunos habitos estan arruinando tu piel sin que te des cuenta. Aqui van los 10 mas comunes y como corregirlos hoy.</p><h3>1. Lavarte con agua muy caliente</h3><p>El agua caliente reseca la piel y causa rojeces. Usa agua tibia.</p><h3>2. Tocarte la cara</h3><p>Tus manos tienen bacterias que se transfieren a tu cara. Trata de evitarlo durante el dia.</p><div class="article-tip-box"><strong>Pro tip</strong>Cambia tu funda de almohada dos veces por semana. Absorbe aceites y bacterias que van directo a tu cara mientras duermes.</div><h3>3. Reventarte los granitos</h3><p>Introduce mas bacterias, puede dejar manchas permanentes y hace que el granito se inflame mas. Usa parches de hidrocoloide en su lugar, son magicos.</p><h3>4. Saltarte el hidratante porque tienes piel grasa</h3><p>Si no hidratas, tu piel produce mas grasa para compensar. Usa un hidratante ligero en gel sin aceite.</p><h3>5. No usar protector solar</h3><p>El sol dana incluso en dias nublados o en interiores. SPF 30+ todos los dias es la inversion antienvejecimiento mas importante que puedes hacer ahora.</p><h3>6. Usar demasiados productos</h3><p>Mezclar muchos activos irrita la piel. Empieza simple: limpiador, hidratante, SPF.</p><h3>7. Exfoliar todos los dias</h3><p>1-2 veces por semana maximo. Mas seguido dana la barrera de la piel.</p><h3>8. Dormir con maquillaje</h3><p>El maquillaje tapa los poros de noche cuando tu piel se regenera. Ten toallitas en tu buro para los dias dificiles.</p><h3>9. Cambiar productos constantemente</h3><p>La piel necesita 4-6 semanas para adaptarse. Si cambias cada semana, nunca sabras que realmente te funciona.</p><h3>10. Comparar tu piel con las redes sociales</h3><p>El 99% de las fotos tienen filtros. La piel con poros e imperfecciones es piel sana y normal. Cuidala, no la compares.</p>`},
+            cabello:{tag:'Cabello',title:'Cabello sano y brillante sin gastar mucho',meta:['Cabello','7 min lectura','Tip atemporal'],img:'https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=800&q=80',body:`<p>El cabello bonito no viene de productos caros, viene de habitos correctos. Estos tips funcionan para todo tipo de cabello.</p><h3>Lava menos, hidrata mas</h3><p>Lavar todos los dias elimina los aceites naturales que protegen tu cabello. Para la mayoria de las teens, lavar cada 2-3 dias es ideal. Si se engrasa rapido, prueba shampoo en seco entre lavadas.</p><div class="article-tip-box"><strong>Pro tip</strong>Aplica el shampoo solo en el cuero cabelludo. El acondicionador va al reves: solo en las puntas, nunca en el cuero cabelludo.</div><h3>Agua fria al final</h3><p>Despues de enjuagar el acondicionador, cierra con 30 segundos de agua fria. Sella la cuticula y hace que el cabello se vea brillante.</p><h3>Protector de calor: no negociable</h3><p>Si usas plancha o rizadora, aplica protector de calor antes. Sin este paso el calor rompe las proteinas del cabello con el tiempo.</p><h3>Mascarilla casera que funciona</h3><p>Una cucharada de aceite de coco + una de miel. Aplica en las puntas, espera 20 minutos, lava normal. Desde la primera vez se nota la diferencia.</p><h3>El tipo de liga importa</h3><p>Las ligas de metal rompen el cabello. Usa scrunchies o espirales sin metal, especialmente si lo llevas amarrado seguido.</p><h3>Alimentate bien</h3><p>El cabello esta hecho de proteina. Si no comes suficiente, se cae mas y crece mas lento. Huevos, frijoles, nueces y pollo son tus mejores aliados.</p>`},
+            confianza:{tag:'Bienestar',title:'Como sentirte glam y segura de ti misma todos los dias',meta:['Bienestar','5 min lectura','Tip atemporal'],img:'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=800&q=80',body:`<p>La confianza no es algo con lo que naces, es algo que construyes. Y hay cosas concretas que puedes hacer hoy para empezar.</p><h3>El mito de la chica perfecta</h3><p>Ninguna chica que admiras se siente perfecta por dentro. La confianza que ves en redes es, la mayoria de las veces, una actuacion. Todas tenemos dias malos e inseguridades. Eso es completamente normal.</p><div class="article-tip-box"><strong>Recuerda esto</strong>Sentirte bien contigo misma no significa gustarte al 100% todo el tiempo. Significa tratarte con amabilidad aunque no te sientas en tu mejor dia.</div><h3>El poder del arreglo personal</h3><p>No se trata de maquillaje caro. Se trata de hacer el esfuerzo de cuidarte. Ducharte, peinarte, ponerte ropa con la que te sientas comoda, estos actos le dicen a tu cerebro que te importas.</p><h3>Hablate como le hablas a tu mejor amiga</h3><p>Si tu amiga te dijera "me veo horrible hoy", nunca le dirias "si, tienes razon". Le dirias cosas bonitas. Haz lo mismo contigo.</p><h3>Tu outfit de poder</h3><p>Todas tenemos esa prenda con la que nos sentimos que podemos con todo. Identificala y usala los dias que mas lo necesites: presentaciones, dias dificiles, situaciones nerviosas.</p><h3>Muevete</h3><p>El ejercicio libera endorfinas que mejoran tu humor en minutos. Bailar en tu cuarto, salir a caminar, estirarte 10 minutos. Tu cuerpo y tu mente lo agradecen.</p><h3>Una cosa cada dia</h3><p>La confianza se construye con evidencia. Cada vez que haces algo que da miedo, le demuestras a tu cerebro que puedes. Haz una cosa pequena que te de nervios cada dia. Con el tiempo, te sorprenderas de lo lejos que llegaste.</p>`}
+        };
+
+        function showArticle(id){
+            const a=articles[id];
+            if(!a)return;
+            document.getElementById('article-content').innerHTML=`
+                <div class="article-tag">${a.tag}</div>
+                <h2 class="article-title">${a.title}</h2>
+                <div class="article-meta">${a.meta.map(m=>`<span>${m}</span>`).join('<span>&nbsp;•&nbsp;</span>')}</div>
+                <img src="${a.img}" alt="${a.title}" class="article-hero-img">
+                <div class="article-body">${a.body}</div>
+            `;
+            const ov=document.getElementById('article-overlay');
+            ov.style.display='block';
+            ov.scrollTop=0;
+            document.body.style.overflow='hidden';
+        }
+
+        function hideArticle(){
+            document.getElementById('article-overlay').style.display='none';
+            document.body.style.overflow='';
+        }
+    </script>
+
+</body>
+</html>
