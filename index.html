@@ -866,6 +866,21 @@
         }
       });
 
+      // Oculta el encabezado de cada grupo cuyas tarjetas estén todas vencidas.
+      // Cada grupo es un <h3> seguido de su <div class="shop-grid">.
+      document.querySelectorAll('#tienda .shop-grid').forEach(function(grid) {
+        const visiblesGrupo = grid.querySelectorAll(
+          '[data-expires]:not([style*="display: none"])'
+        );
+        if (visiblesGrupo.length === 0) {
+          grid.style.display = 'none';
+          const header = grid.previousElementSibling;
+          if (header && header.tagName === 'H3') {
+            header.style.display = 'none';
+          }
+        }
+      });
+
       // Si todos los productos de #tienda están ocultos, muestra mensaje
       const tienda = document.getElementById('tienda');
       if (tienda) {
