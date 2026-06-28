@@ -46,7 +46,13 @@ nav {
 .article-body { font-size: 18px; line-height: 1.85; color: #2c2230; }
 .article-body h3 { font-family: 'Fraunces', serif; font-size: 26px; letter-spacing: -.5px; margin: 40px 0 14px; color: var(--dark); }
 .article-body p { margin-bottom: 20px; }
+.article-body ul { padding-left: 24px; margin-bottom: 20px; }
+.article-body ul li { margin-bottom: 10px; }
 .article-body strong { font-weight: 700; color: var(--dark); }
+
+/* CARD DE TIP (artículos de belleza) */
+.article-tip-box { background: var(--pink-light); border-left: 4px solid var(--pink); border-radius: 0 16px 16px 0; padding: 20px 24px; margin: 28px 0; }
+.article-tip-box strong { color: var(--pink); display: block; margin-bottom: 6px; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; }
 .article-body a { color: var(--pink); font-weight: 600; text-decoration: none; border-bottom: 1.5px solid var(--pink-light); transition: border-color .2s; }
 .article-body a:hover { border-color: var(--pink); }
 

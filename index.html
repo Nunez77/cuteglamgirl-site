@@ -15,6 +15,11 @@
     <meta name="description" content="Tips de belleza atemporales, outfits cute y consejos glam para chicas de 13-18 años.">
     <title>CuteGlamGirl ✨ | Tu Glow-Up Empieza Aquí</title>
 
+    <link rel="canonical" href="https://cuteglamgirl.com/">
+    <link rel="alternate" hreflang="es" href="https://cuteglamgirl.com/">
+    <link rel="alternate" hreflang="en" href="https://cuteglamgirl.com/en/">
+    <link rel="alternate" hreflang="x-default" href="https://cuteglamgirl.com/">
+
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="CuteGlamGirl">
     <meta property="og:locale" content="es_MX">
@@ -70,6 +75,10 @@
             display: flex; align-items: center; gap: 8px; transition: transform .2s, background .2s;
         }
         .nav-cta:hover { background: #e05585; transform: translateY(-1px); }
+        .nav-right { display: flex; align-items: center; gap: 24px; }
+        .lang-switch { display: inline-flex; align-items: center; gap: 2px; background: var(--pink-light); border-radius: 999px; padding: 3px; }
+        .lang-switch a, .lang-switch span { font-size: 12px; font-weight: 700; letter-spacing: .5px; padding: 5px 12px; border-radius: 999px; text-decoration: none; color: var(--pink); }
+        .lang-switch .current { background: var(--pink); color: #fff; }
 
         /* HERO */
         .hero {
@@ -276,14 +285,17 @@
             <span style="font-size:26px">✨</span>
             <h1>CuteGlamGirl</h1>
         </div>
-        <ul class="nav-links">
+        <div class="nav-right">
+          <ul class="nav-links">
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#tips">Tips</a></li>
             <li><a href="#blog">Blog</a></li>
             <li><a href="#tienda">Tienda</a></li>
             <li><a href="#libros">Libros</a></li>
             <li><a href="#nosotras">Sobre Mí</a></li>
-        </ul>
+          </ul>
+          <div class="lang-switch"><span class="current">ES</span><a href="/en/">EN</a></div>
+        </div>
         <a href="#tienda" class="nav-cta"><i class="fas fa-shopping-bag"></i> Ver Favoritos</a>
     </nav>
 
@@ -355,7 +367,7 @@
                     <span class="tip-tag">Skincare</span>
                     <h3>Rutina de 5 minutos para piel radiante</h3>
                     <p>Limpieza, hidratación y SPF. La trifecta que toda teen necesita antes de salir de casa.</p>
-                    <a href="#" onclick="showArticle('skincare5min');return false;" class="tip-link">Leer el tip <i class="fas fa-arrow-right"></i></a>
+                    <a href="/blog/rutina-skincare-5-minutos/" class="tip-link">Leer el tip <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
             <div class="tip-card">
@@ -364,7 +376,7 @@
                     <span class="tip-tag">Maquillaje</span>
                     <h3>Look glowy para la escuela en 7 minutos</h3>
                     <p>Natural, fresco y cute. Productos que ya tienes y un resultado que dura todo el día.</p>
-                    <a href="#" onclick="showArticle('maquillaje7min');return false;" class="tip-link">Leer el tip <i class="fas fa-arrow-right"></i></a>
+                    <a href="/blog/maquillaje-glowy-escuela/" class="tip-link">Leer el tip <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
             <div class="tip-card">
@@ -373,7 +385,7 @@
                     <span class="tip-tag">Moda</span>
                     <h3>15 outfits cute con ropa que ya tienes</h3>
                     <p>Para de decir que no tienes qué ponerte. Con esto vas a sorprender hasta a ti misma.</p>
-                    <a href="#" onclick="showArticle('outfits15');return false;" class="tip-link">Leer el tip <i class="fas fa-arrow-right"></i></a>
+                    <a href="/blog/15-outfits-con-lo-que-tienes/" class="tip-link">Leer el tip <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -437,7 +449,7 @@
                 <div class="blog-body">
                     <div class="blog-meta"><span>Skincare</span><span>•</span><span>8 min lectura</span></div>
                     <h3>10 errores de skincare que todas las teens cometen (y cómo evitarlos)</h3>
-                    <a href="#" onclick="showArticle('errores10');return false;" class="read-link">Leer ahora →</a>
+                    <a href="/blog/errores-skincare-teens/" class="read-link">Leer ahora →</a>
                 </div>
             </div>
             <div class="blog-card">
@@ -445,7 +457,7 @@
                 <div class="blog-body">
                     <div class="blog-meta"><span>Maquillaje</span><span>•</span><span>6 min</span></div>
                     <h3>Maquillaje de 5 minutos perfecto para la escuela</h3>
-                    <a href="#" onclick="showArticle('maquillaje7min');return false;" class="read-link">Leer ahora →</a>
+                    <a href="/blog/maquillaje-glowy-escuela/" class="read-link">Leer ahora →</a>
                 </div>
             </div>
             <div class="blog-card">
@@ -453,7 +465,7 @@
                 <div class="blog-body">
                     <div class="blog-meta"><span>Cabello</span><span>•</span><span>7 min</span></div>
                     <h3>Cabello sano y brillante sin gastar mucho</h3>
-                    <a href="#" onclick="showArticle('cabello');return false;" class="read-link">Leer ahora →</a>
+                    <a href="/blog/cabello-sano-sin-gastar/" class="read-link">Leer ahora →</a>
                 </div>
             </div>
             <div class="blog-card">
@@ -461,7 +473,7 @@
                 <div class="blog-body">
                     <div class="blog-meta"><span>Bienestar</span><span>•</span><span>5 min</span></div>
                     <h3>Cómo sentirte glam y segura de ti misma</h3>
-                    <a href="#" onclick="showArticle('confianza');return false;" class="read-link">Leer ahora →</a>
+                    <a href="/blog/sentirte-segura-todos-los-dias/" class="read-link">Leer ahora →</a>
                 </div>
             </div>
         </div>
@@ -870,16 +882,6 @@
         }
     </script>
 
-    <!-- ARTICLE OVERLAY -->
-    <div id="article-overlay" style="display:none;position:fixed;inset:0;z-index:200;background:var(--cream);overflow-y:auto;">
-        <div style="max-width:760px;margin:0 auto;padding:40px 24px 80px;">
-            <button onclick="hideArticle()" style="display:inline-flex;align-items:center;gap:8px;background:var(--pink-light);color:var(--pink);border:none;border-radius:999px;padding:10px 20px;font-family:'DM Sans',sans-serif;font-weight:600;font-size:14px;cursor:pointer;margin-bottom:40px;">
-                ← Volver al inicio
-            </button>
-            <div id="article-content"></div>
-        </div>
-    </div>
-
     <style>
         .article-hero-img{width:100%;height:360px;object-fit:cover;border-radius:24px;margin-bottom:32px;}
         .article-tag{display:inline-block;background:var(--pink-light);color:var(--pink);padding:4px 14px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:16px;}
@@ -893,38 +895,6 @@
         .article-tip-box{background:var(--pink-light);border-left:4px solid var(--pink);border-radius:0 16px 16px 0;padding:20px 24px;margin:28px 0;}
         .article-tip-box strong{color:var(--pink);display:block;margin-bottom:6px;font-size:13px;text-transform:uppercase;letter-spacing:1px;}
     </style>
-
-    <script>
-        const articles = {
-            skincare5min:{tag:'Skincare',title:'Rutina de skincare de 5 minutos para piel radiante',meta:['Skincare','5 min lectura','Tip atemporal'],img:'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&q=80',body:`<p>Tienes 5 minutos antes de salir? Es todo lo que necesitas para tener la piel mas bonita de la clase. Esta rutina es simple, funciona a cualquier edad y no requiere gastar mucho.</p><h3>Paso 1: Limpieza (1 min)</h3><p>Usa un limpiador suave con agua tibia. Nada de jabon de barra: reseca tu piel. Busca uno en gel o espuma que diga "para piel sensible". Masajea en circulos por 30 segundos y enjuaga bien.</p><div class="article-tip-box"><strong>Pro tip</strong>El agua muy caliente abre los poros pero tambien irrita. Usa agua tibia, no caliente.</div><h3>Paso 2: Hidratante ligero (2 min)</h3><p>Con la piel todavia un poco humeda, aplica tu hidratante. Una cantidad del tamano de un chicharo es suficiente. Los hidratantes con acido hialuronico son los mejores para teens porque hidratan sin tapar los poros.</p><h3>Paso 3: Protector solar (2 min)</h3><p>Este es el paso que mas teens se saltan y es el mas importante. El sol dana la piel incluso en dias nublados. Usa SPF 30 minimo, todos los dias, todo el ano. Los protectores en gel no se sienten pesados y no dejan cara blanca.</p><div class="article-tip-box"><strong>Sabias que?</strong>El 80% del dano solar ocurre antes de los 18 anos. Empezar tu rutina ahora es el mejor regalo que le puedes dar a tu piel del futuro.</div><h3>Y en la noche...</h3><p>Agrega un paso extra: desmaqu&iacute;llate y aplica una crema hidratante un poco mas nutritiva. Dormir con la cara limpia es el secreto de la piel mas bonita.</p>`},
-            maquillaje7min:{tag:'Maquillaje',title:'Look glowy para la escuela en 7 minutos',meta:['Maquillaje','6 min lectura','Tip atemporal'],img:'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80',body:`<p>Maquillaje para la escuela tiene una regla de oro: que parezca que no traes nada, pero que te veas radiante. Este look lo logras en 7 minutos exactos.</p><h3>Minuto 1-2: BB Cream</h3><p>Para teens, una BB cream es mejor que una base pesada. Empareja el tono de tu piel sin verse maquillada. Aplica con los dedos o una esponjita humeda y difumina bien hacia el cuello.</p><div class="article-tip-box"><strong>Pro tip</strong>Si tienes granitos, cubrelos con un poco de corrector antes de la BB cream. Ponlo dando pequenos toquecitos, nunca frotando.</div><h3>Minuto 3: Cejas</h3><p>Las cejas enmarcan toda tu cara. Define su forma natural con un lapiz del color de tu cabello. Movimientos cortos imitando los pelos. Difumina al final con el cepillo del lapiz.</p><h3>Minuto 4-5: Iluminador</h3><p>Un toque de iluminador en el arco de la ceja, el lagrimal, la punta de la nariz y el arco de cupido. Eso es todo lo que necesitas para el efecto glowy. Si no tienes iluminador, una sombra champagne funciona igual.</p><h3>Minuto 6: Mascara de pestanas</h3><p>Una capa en las pestanas superiores abre los ojos al instante. Aplica en zigzag desde la raiz hacia las puntas. Una capa es suficiente para el look natural.</p><h3>Minuto 7: Lip gloss</h3><p>Un gloss transparente o un labial nude termina el look perfecto. Humedo, natural, cute. Lista!</p>`},
-            outfits15:{tag:'Moda',title:'15 outfits cute con ropa que ya tienes',meta:['Moda','7 min lectura','Tip atemporal'],img:'https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=800&q=80',body:`<p>El secreto de las chicas que siempre se ven bien no es tener mucha ropa, es saber combinar lo que ya tienen. Aqui van 15 combos que funcionan con prendas basicas.</p><h3>Los basicos que necesitas</h3><p>Jeans oscuros, jeans claros, playera blanca, playera negra, sudadera neutra, tenis blancos y una prenda de color. Con eso construyes cualquier look de esta lista.</p><h3>Para la escuela</h3><ul><li><strong>1. Classic cool:</strong> Jeans oscuros + playera blanca + tenis blancos + cadena delgada.</li><li><strong>2. Cozy chic:</strong> Sudadera beige + jeans skinny + tenis blancos + bolsa pequena.</li><li><strong>3. Monocromatico:</strong> Todo en un mismo tono. Se ve sofisticado y es facilisimo.</li><li><strong>4. Pop de color:</strong> Outfit neutro + accesorio de color brillante (aretes, mochila, scrunchie).</li><li><strong>5. Layering facil:</strong> Camiseta + camisa de cuadros abierta encima + jeans. Ata la camisa en la cintura.</li></ul><div class="article-tip-box"><strong>Regla de oro</strong>Si no sabes que ponerte, elige dos colores maximo y un accesorio. Menos es mas.</div><h3>Para salir con amigas</h3><ul><li><strong>6. Chic casual:</strong> Jeans blancos + top de color + sandalias.</li><li><strong>7. Sporty glam:</strong> Leggings + crop top + chaqueta de mezclilla + tenis.</li><li><strong>8. Vintage vibes:</strong> Jeans mom + playera tucked in + cinturon delgado + tenis de plataforma.</li><li><strong>9. Coquette:</strong> Falda plisada + blusa de lazos + ballet flats.</li><li><strong>10. Street style:</strong> Pantalon cargo + crop hoodie + tenis chunky.</li></ul><h3>Para eventos especiales</h3><ul><li><strong>11. Elegante sencillo:</strong> Pantalon negro de tela + blusa simple + mocasin.</li><li><strong>12. Floral forever:</strong> Vestido floral + denim jacket + tenis blancos.</li><li><strong>13. All black glam:</strong> Todo negro con texturas diferentes (jean + top satinado + botines).</li><li><strong>14. Pastel dream:</strong> Dos pasteles cercanos en el circulo cromatico (lila + rosa, menta + celeste).</li><li><strong>15. Denim on denim:</strong> Jeans + chaqueta de mezclilla de tono diferente.</li></ul>`},
-            errores10:{tag:'Skincare',title:'10 errores de skincare que todas las teens cometen',meta:['Skincare','8 min lectura','Tip atemporal'],img:'https://images.unsplash.com/photo-1487412912498-0447578fcca8?w=800&q=80',body:`<p>No es tu culpa, nadie nos ensena skincare en la escuela. Pero algunos habitos estan arruinando tu piel sin que te des cuenta. Aqui van los 10 mas comunes y como corregirlos hoy.</p><h3>1. Lavarte con agua muy caliente</h3><p>El agua caliente reseca la piel y causa rojeces. Usa agua tibia.</p><h3>2. Tocarte la cara</h3><p>Tus manos tienen bacterias que se transfieren a tu cara. Trata de evitarlo durante el dia.</p><div class="article-tip-box"><strong>Pro tip</strong>Cambia tu funda de almohada dos veces por semana. Absorbe aceites y bacterias que van directo a tu cara mientras duermes.</div><h3>3. Reventarte los granitos</h3><p>Introduce mas bacterias, puede dejar manchas permanentes y hace que el granito se inflame mas. Usa parches de hidrocoloide en su lugar, son magicos.</p><h3>4. Saltarte el hidratante porque tienes piel grasa</h3><p>Si no hidratas, tu piel produce mas grasa para compensar. Usa un hidratante ligero en gel sin aceite.</p><h3>5. No usar protector solar</h3><p>El sol dana incluso en dias nublados o en interiores. SPF 30+ todos los dias es la inversion antienvejecimiento mas importante que puedes hacer ahora.</p><h3>6. Usar demasiados productos</h3><p>Mezclar muchos activos irrita la piel. Empieza simple: limpiador, hidratante, SPF.</p><h3>7. Exfoliar todos los dias</h3><p>1-2 veces por semana maximo. Mas seguido dana la barrera de la piel.</p><h3>8. Dormir con maquillaje</h3><p>El maquillaje tapa los poros de noche cuando tu piel se regenera. Ten toallitas en tu buro para los dias dificiles.</p><h3>9. Cambiar productos constantemente</h3><p>La piel necesita 4-6 semanas para adaptarse. Si cambias cada semana, nunca sabras que realmente te funciona.</p><h3>10. Comparar tu piel con las redes sociales</h3><p>El 99% de las fotos tienen filtros. La piel con poros e imperfecciones es piel sana y normal. Cuidala, no la compares.</p>`},
-            cabello:{tag:'Cabello',title:'Cabello sano y brillante sin gastar mucho',meta:['Cabello','7 min lectura','Tip atemporal'],img:'https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=800&q=80',body:`<p>El cabello bonito no viene de productos caros, viene de habitos correctos. Estos tips funcionan para todo tipo de cabello.</p><h3>Lava menos, hidrata mas</h3><p>Lavar todos los dias elimina los aceites naturales que protegen tu cabello. Para la mayoria de las teens, lavar cada 2-3 dias es ideal. Si se engrasa rapido, prueba shampoo en seco entre lavadas.</p><div class="article-tip-box"><strong>Pro tip</strong>Aplica el shampoo solo en el cuero cabelludo. El acondicionador va al reves: solo en las puntas, nunca en el cuero cabelludo.</div><h3>Agua fria al final</h3><p>Despues de enjuagar el acondicionador, cierra con 30 segundos de agua fria. Sella la cuticula y hace que el cabello se vea brillante.</p><h3>Protector de calor: no negociable</h3><p>Si usas plancha o rizadora, aplica protector de calor antes. Sin este paso el calor rompe las proteinas del cabello con el tiempo.</p><h3>Mascarilla casera que funciona</h3><p>Una cucharada de aceite de coco + una de miel. Aplica en las puntas, espera 20 minutos, lava normal. Desde la primera vez se nota la diferencia.</p><h3>El tipo de liga importa</h3><p>Las ligas de metal rompen el cabello. Usa scrunchies o espirales sin metal, especialmente si lo llevas amarrado seguido.</p><h3>Alimentate bien</h3><p>El cabello esta hecho de proteina. Si no comes suficiente, se cae mas y crece mas lento. Huevos, frijoles, nueces y pollo son tus mejores aliados.</p>`},
-            confianza:{tag:'Bienestar',title:'Como sentirte glam y segura de ti misma todos los dias',meta:['Bienestar','5 min lectura','Tip atemporal'],img:'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=800&q=80',body:`<p>La confianza no es algo con lo que naces, es algo que construyes. Y hay cosas concretas que puedes hacer hoy para empezar.</p><h3>El mito de la chica perfecta</h3><p>Ninguna chica que admiras se siente perfecta por dentro. La confianza que ves en redes es, la mayoria de las veces, una actuacion. Todas tenemos dias malos e inseguridades. Eso es completamente normal.</p><div class="article-tip-box"><strong>Recuerda esto</strong>Sentirte bien contigo misma no significa gustarte al 100% todo el tiempo. Significa tratarte con amabilidad aunque no te sientas en tu mejor dia.</div><h3>El poder del arreglo personal</h3><p>No se trata de maquillaje caro. Se trata de hacer el esfuerzo de cuidarte. Ducharte, peinarte, ponerte ropa con la que te sientas comoda, estos actos le dicen a tu cerebro que te importas.</p><h3>Hablate como le hablas a tu mejor amiga</h3><p>Si tu amiga te dijera "me veo horrible hoy", nunca le dirias "si, tienes razon". Le dirias cosas bonitas. Haz lo mismo contigo.</p><h3>Tu outfit de poder</h3><p>Todas tenemos esa prenda con la que nos sentimos que podemos con todo. Identificala y usala los dias que mas lo necesites: presentaciones, dias dificiles, situaciones nerviosas.</p><h3>Muevete</h3><p>El ejercicio libera endorfinas que mejoran tu humor en minutos. Bailar en tu cuarto, salir a caminar, estirarte 10 minutos. Tu cuerpo y tu mente lo agradecen.</p><h3>Una cosa cada dia</h3><p>La confianza se construye con evidencia. Cada vez que haces algo que da miedo, le demuestras a tu cerebro que puedes. Haz una cosa pequena que te de nervios cada dia. Con el tiempo, te sorprenderas de lo lejos que llegaste.</p>`}
-        };
-
-        function showArticle(id){
-            const a=articles[id];
-            if(!a)return;
-            document.getElementById('article-content').innerHTML=`
-                <div class="article-tag">${a.tag}</div>
-                <h2 class="article-title">${a.title}</h2>
-                <div class="article-meta">${a.meta.map(m=>`<span>${m}</span>`).join('<span>&nbsp;•&nbsp;</span>')}</div>
-                <img src="${a.img}" alt="${a.title}" class="article-hero-img">
-                <div class="article-body">${a.body}</div>
-            `;
-            const ov=document.getElementById('article-overlay');
-            ov.style.display='block';
-            ov.scrollTop=0;
-            document.body.style.overflow='hidden';
-        }
-
-        function hideArticle(){
-            document.getElementById('article-overlay').style.display='none';
-            document.body.style.overflow='';
-        }
-    </script>
 
     <script>
     (function() {

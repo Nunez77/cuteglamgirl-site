@@ -3,6 +3,9 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://cuteglamgirl.com/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cuteglamgirl.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cuteglamgirl.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cuteglamgirl.com/"/>
     <lastmod>2026-06-28</lastmod>
   </url>
   <url>
@@ -90,7 +93,98 @@
     <lastmod>2026-06-28</lastmod>
   </url>
   <url>
+    <loc>https://cuteglamgirl.com/blog/rutina-skincare-5-minutos/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cuteglamgirl.com/blog/rutina-skincare-5-minutos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cuteglamgirl.com/en/blog/5-minute-skincare-routine/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cuteglamgirl.com/blog/rutina-skincare-5-minutos/"/>
+    <lastmod>2026-06-28</lastmod>
+  </url>
+  <url>
+    <loc>https://cuteglamgirl.com/en/blog/5-minute-skincare-routine/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cuteglamgirl.com/blog/rutina-skincare-5-minutos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cuteglamgirl.com/en/blog/5-minute-skincare-routine/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cuteglamgirl.com/blog/rutina-skincare-5-minutos/"/>
+    <lastmod>2026-06-28</lastmod>
+  </url>
+  <url>
+    <loc>https://cuteglamgirl.com/blog/maquillaje-glowy-escuela/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cuteglamgirl.com/blog/maquillaje-glowy-escuela/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cuteglamgirl.com/en/blog/glowy-school-makeup/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cuteglamgirl.com/blog/maquillaje-glowy-escuela/"/>
+    <lastmod>2026-06-28</lastmod>
+  </url>
+  <url>
+    <loc>https://cuteglamgirl.com/en/blog/glowy-school-makeup/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cuteglamgirl.com/blog/maquillaje-glowy-escuela/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cuteglamgirl.com/en/blog/glowy-school-makeup/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cuteglamgirl.com/blog/maquillaje-glowy-escuela/"/>
+    <lastmod>2026-06-28</lastmod>
+  </url>
+  <url>
+    <loc>https://cuteglamgirl.com/blog/15-outfits-con-lo-que-tienes/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cuteglamgirl.com/blog/15-outfits-con-lo-que-tienes/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cuteglamgirl.com/en/blog/15-outfits-clothes-you-already-have/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cuteglamgirl.com/blog/15-outfits-con-lo-que-tienes/"/>
+    <lastmod>2026-06-28</lastmod>
+  </url>
+  <url>
+    <loc>https://cuteglamgirl.com/en/blog/15-outfits-clothes-you-already-have/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cuteglamgirl.com/blog/15-outfits-con-lo-que-tienes/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cuteglamgirl.com/en/blog/15-outfits-clothes-you-already-have/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cuteglamgirl.com/blog/15-outfits-con-lo-que-tienes/"/>
+    <lastmod>2026-06-28</lastmod>
+  </url>
+  <url>
+    <loc>https://cuteglamgirl.com/blog/errores-skincare-teens/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cuteglamgirl.com/blog/errores-skincare-teens/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cuteglamgirl.com/en/blog/skincare-mistakes-teens/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cuteglamgirl.com/blog/errores-skincare-teens/"/>
+    <lastmod>2026-06-28</lastmod>
+  </url>
+  <url>
+    <loc>https://cuteglamgirl.com/en/blog/skincare-mistakes-teens/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cuteglamgirl.com/blog/errores-skincare-teens/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cuteglamgirl.com/en/blog/skincare-mistakes-teens/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cuteglamgirl.com/blog/errores-skincare-teens/"/>
+    <lastmod>2026-06-28</lastmod>
+  </url>
+  <url>
+    <loc>https://cuteglamgirl.com/blog/cabello-sano-sin-gastar/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cuteglamgirl.com/blog/cabello-sano-sin-gastar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cuteglamgirl.com/en/blog/healthy-hair-on-a-budget/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cuteglamgirl.com/blog/cabello-sano-sin-gastar/"/>
+    <lastmod>2026-06-28</lastmod>
+  </url>
+  <url>
+    <loc>https://cuteglamgirl.com/en/blog/healthy-hair-on-a-budget/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cuteglamgirl.com/blog/cabello-sano-sin-gastar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cuteglamgirl.com/en/blog/healthy-hair-on-a-budget/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cuteglamgirl.com/blog/cabello-sano-sin-gastar/"/>
+    <lastmod>2026-06-28</lastmod>
+  </url>
+  <url>
+    <loc>https://cuteglamgirl.com/blog/sentirte-segura-todos-los-dias/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cuteglamgirl.com/blog/sentirte-segura-todos-los-dias/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cuteglamgirl.com/en/blog/feel-confident-every-day/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cuteglamgirl.com/blog/sentirte-segura-todos-los-dias/"/>
+    <lastmod>2026-06-28</lastmod>
+  </url>
+  <url>
+    <loc>https://cuteglamgirl.com/en/blog/feel-confident-every-day/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cuteglamgirl.com/blog/sentirte-segura-todos-los-dias/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cuteglamgirl.com/en/blog/feel-confident-every-day/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cuteglamgirl.com/blog/sentirte-segura-todos-los-dias/"/>
+    <lastmod>2026-06-28</lastmod>
+  </url>
+  <url>
     <loc>https://cuteglamgirl.com/en/blog/</loc>
+    <lastmod>2026-06-28</lastmod>
+  </url>
+  <url>
+    <loc>https://cuteglamgirl.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cuteglamgirl.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cuteglamgirl.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cuteglamgirl.com/"/>
     <lastmod>2026-06-28</lastmod>
   </url>
 </urlset>

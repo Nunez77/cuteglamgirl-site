@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZE4W3K2QXL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-ZE4W3K2QXL');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Timeless beauty tips, cute outfits and glam advice for girls 13 to 18. Skincare, makeup, books and confidence, no drama and no overspending.">
+    <title>CuteGlamGirl &#10024; | Beauty &amp; Confidence for Teen Girls</title>
+
+    <link rel="canonical" href="https://cuteglamgirl.com/en/">
+    <link rel="alternate" hreflang="es" href="https://cuteglamgirl.com/">
+    <link rel="alternate" hreflang="en" href="https://cuteglamgirl.com/en/">
+    <link rel="alternate" hreflang="x-default" href="https://cuteglamgirl.com/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CuteGlamGirl">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="CuteGlamGirl | Beauty &amp; Confidence for Teen Girls">
+    <meta property="og:description" content="Timeless beauty tips, cute outfits and glam advice for girls 13 to 18.">
+    <meta property="og:url" content="https://cuteglamgirl.com/en/">
+    <meta property="og:image" content="https://cuteglamgirl.com/img/portada-nueva.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://cuteglamgirl.com/img/portada-nueva.jpg">
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <meta name="theme-color" content="#FF6B9D">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "CuteGlamGirl",
+      "url": "https://cuteglamgirl.com/en/",
+      "inLanguage": "en",
+      "description": "Timeless beauty tips, cute outfits and glam advice for teen girls 13 to 18."
+    }
+    </script>
+
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --pink: #FF6B9D;
+            --pink-light: #FFD6E8;
+            --pink-pale: #FFF0F6;
+            --purple: #C084FC;
+            --cream: #FFF8F2;
+            --dark: #1A0A14;
+            --gray: #6B5B66;
+        }
+
+        html { scroll-behavior: smooth; }
+        body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--dark); overflow-x: hidden; }
+        h1, h2, h3 { font-family: 'Fraunces', serif; }
+
+        /* NAVBAR */
+        nav {
+            position: sticky; top: 0; z-index: 100;
+            background: rgba(255,255,255,0.88); backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--pink-light);
+            padding: 16px 48px; display: flex; align-items: center; justify-content: space-between;
+        }
+        .nav-logo { display: flex; align-items: center; gap: 10px; }
+        .nav-logo h1 { font-size: 22px; color: var(--pink); letter-spacing: -0.5px; }
+        .nav-links { display: flex; gap: 32px; list-style: none; }
+        .nav-links a { text-decoration: none; color: var(--dark); font-size: 15px; font-weight: 500; transition: color .2s; }
+        .nav-links a:hover { color: var(--pink); }
+        .nav-cta {
+            background: var(--pink); color: #fff; padding: 10px 24px;
+            border-radius: 999px; text-decoration: none; font-weight: 600; font-size: 14px;
+            display: flex; align-items: center; gap: 8px; transition: transform .2s, background .2s;
+        }
+        .nav-cta:hover { background: #e05585; transform: translateY(-1px); }
+
+        /* HERO */
+        .hero {
+            min-height: 92vh; display: grid; grid-template-columns: 1fr 1fr;
+            align-items: center; gap: 60px; padding: 80px 60px; position: relative; overflow: hidden;
+        }
+        .hero::before {
+            content: ''; position: absolute; inset: 0; pointer-events: none;
+            background: radial-gradient(ellipse 70% 60% at 80% 50%, #FFD6E855, transparent 70%),
+                        radial-gradient(ellipse 50% 50% at 10% 80%, #C084FC22, transparent 60%);
+        }
+        .hero-badge {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: var(--pink-light); color: var(--pink);
+            padding: 6px 16px; border-radius: 999px; font-size: 13px; font-weight: 600;
+            margin-bottom: 24px; animation: fadeDown .6s ease both;
+        }
+        .hero h2 {
+            font-size: clamp(40px, 5vw, 66px); line-height: 1.05; letter-spacing: -2px;
+            margin-bottom: 20px; animation: fadeDown .7s .1s ease both;
+        }
+        .hero h2 em { color: var(--pink); font-style: italic; }
+        .hero p {
+            font-size: 18px; line-height: 1.7; color: var(--gray);
+            max-width: 480px; margin-bottom: 36px; animation: fadeDown .7s .2s ease both;
+        }
+        .hero-btns { display: flex; gap: 16px; flex-wrap: wrap; animation: fadeDown .7s .3s ease both; }
+        .btn-primary {
+            background: linear-gradient(135deg, var(--pink), var(--purple));
+            color: #fff; padding: 14px 32px; border-radius: 999px;
+            text-decoration: none; font-weight: 700; font-size: 16px;
+            box-shadow: 0 8px 32px #FF6B9D44; transition: transform .2s, box-shadow .2s;
+        }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 40px #FF6B9D66; }
+        .btn-secondary {
+            color: var(--dark); padding: 14px 28px; border-radius: 999px;
+            text-decoration: none; font-weight: 600; font-size: 16px;
+            border: 2px solid var(--pink-light); transition: border-color .2s, color .2s;
+        }
+        .btn-secondary:hover { border-color: var(--pink); color: var(--pink); }
+
+        .hero-visual { position: relative; animation: fadeLeft .8s .2s ease both; }
+        .hero-img-main {
+            width: 100%; aspect-ratio: 4/5; object-fit: cover;
+            border-radius: 40px 40px 120px 40px;
+            box-shadow: 0 32px 80px #FF6B9D33;
+        }
+        .hero-card {
+            position: absolute; bottom: 40px; left: -32px;
+            background: white; border-radius: 20px; padding: 16px 20px;
+            box-shadow: 0 16px 48px #00000018; display: flex; align-items: center; gap: 14px;
+            animation: pulse 3s ease-in-out infinite;
+        }
+        .hero-card-icon { font-size: 28px; }
+        .hero-card-text strong { display: block; font-size: 15px; font-weight: 700; }
+        .hero-card-text span { font-size: 12px; color: var(--gray); }
+        .hero-dot { position: absolute; border-radius: 50%; }
+        .hero-dot-1 { width: 20px; height: 20px; top: -12px; right: 40px; background: linear-gradient(135deg, var(--pink), var(--purple)); animation: bounce 2s ease infinite; }
+        .hero-dot-2 { width: 14px; height: 14px; bottom: 100px; right: -10px; background: var(--purple); animation: bounce 2.5s .5s ease infinite; }
+        .hero-dot-3 { width: 12px; height: 12px; top: 40%; left: -20px; background: #FFD700; animation: bounce 2s 1s ease infinite; }
+
+        /* STATS */
+        .stats {
+            background: var(--dark); color: #fff;
+            display: flex; justify-content: center; gap: 80px; padding: 32px 40px; flex-wrap: wrap;
+        }
+        .stat-item { text-align: center; }
+        .stat-item strong { display: block; font-size: 32px; font-family: 'Fraunces', serif; color: var(--pink); }
+        .stat-item span { font-size: 14px; color: #ffffff99; }
+
+        /* COMMON */
+        section { padding: 96px 60px; }
+        .section-tag {
+            display: inline-block; background: var(--pink-light); color: var(--pink);
+            padding: 4px 14px; border-radius: 999px; font-size: 12px; font-weight: 700;
+            letter-spacing: 1px; text-transform: uppercase; margin-bottom: 16px;
+        }
+        .section-title { font-size: clamp(32px, 4vw, 52px); letter-spacing: -1.5px; line-height: 1.1; margin-bottom: 16px; }
+        .section-sub { font-size: 17px; color: var(--gray); max-width: 540px; line-height: 1.6; }
+
+        /* TIPS */
+        #tips { background: #fff; }
+        .tips-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 56px; gap: 20px; flex-wrap: wrap; }
+        .tips-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+        .tip-card { background: var(--cream); border-radius: 28px; overflow: hidden; transition: transform .3s, box-shadow .3s; }
+        .tip-card:hover { transform: translateY(-6px); box-shadow: 0 24px 60px #FF6B9D22; }
+        .tip-card img { width: 100%; height: 220px; object-fit: cover; display: block; }
+        .tip-card-body { padding: 28px; }
+        .tip-tag { font-size: 11px; font-weight: 700; color: var(--pink); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; display: block; }
+        .tip-card-body h3 { font-size: 22px; letter-spacing: -0.5px; margin-bottom: 10px; line-height: 1.2; }
+        .tip-card-body p { font-size: 14px; color: var(--gray); line-height: 1.6; margin-bottom: 20px; }
+        .tip-link { color: var(--pink); font-weight: 600; font-size: 14px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; transition: gap .2s; }
+        .tip-link:hover { gap: 10px; }
+
+        /* BLOG */
+        #blog { background: var(--pink-pale); }
+        .blog-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 20px; margin-top: 56px; }
+        .blog-card { background: #fff; border-radius: 24px; overflow: hidden; transition: transform .3s, box-shadow .3s; }
+        .blog-card:hover { transform: translateY(-4px); box-shadow: 0 20px 50px #00000012; }
+        .blog-card.featured { grid-row: span 2; }
+        .blog-card img { width: 100%; object-fit: cover; display: block; }
+        .blog-card.featured img { height: 300px; }
+        .blog-card:not(.featured) img { height: 160px; }
+        .blog-body { padding: 24px; }
+        .blog-meta { font-size: 12px; color: var(--gray); margin-bottom: 10px; display: flex; gap: 12px; }
+        .blog-body h3 { font-size: 18px; line-height: 1.3; letter-spacing: -0.3px; margin-bottom: 12px; }
+        .blog-card.featured .blog-body h3 { font-size: 24px; }
+        .read-link { font-size: 13px; font-weight: 600; color: var(--pink); text-decoration: none; }
+
+        /* BLOG · CLÚSTER CONFIANZA Y CRECIMIENTO */
+        .cluster-head { margin: 64px 0 8px; }
+        .cluster-head .section-tag { background: #fff; }
+        .cluster-head h3 { font-size: clamp(24px, 3vw, 34px); letter-spacing: -1px; line-height: 1.15; }
+        .cluster-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 28px; }
+        .cluster-card { background: #fff; border: 1px solid var(--pink-light); border-radius: 22px; padding: 26px; text-decoration: none; color: var(--dark); display: flex; flex-direction: column; transition: transform .3s, box-shadow .3s; }
+        .cluster-card:hover { transform: translateY(-5px); box-shadow: 0 22px 54px #FF6B9D1f; }
+        .cluster-card.pillar { grid-column: 1 / -1; background: linear-gradient(135deg, #fff, var(--pink-light)); }
+        .cluster-card .c-tag { font-size: 11px; font-weight: 700; color: var(--pink); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+        .cluster-card h3 { font-size: 20px; line-height: 1.25; letter-spacing: -.3px; margin-bottom: 14px; flex: 1; }
+        .cluster-card.pillar h3 { font-size: 26px; }
+        .cluster-card .c-read { color: var(--pink); font-weight: 600; font-size: 14px; }
+
+        /* TIENDA */
+        #tienda { background: var(--dark); color: #fff; }
+        #tienda .section-title { color: #fff; }
+        #tienda .section-sub { color: #ffffff88; }
+        .shop-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 56px; }
+        .shop-card {
+            background: #ffffff0d; border: 1px solid #ffffff18; border-radius: 24px;
+            overflow: hidden; transition: transform .3s, border-color .3s; text-decoration: none; color: #fff;
+        }
+        .shop-card:hover { transform: translateY(-4px); border-color: var(--pink); }
+        .shop-card img { width: 100%; height: 200px; object-fit: cover; display: block; }
+        .shop-body { padding: 20px; }
+        .shop-body h4 { font-size: 15px; font-weight: 600; margin-bottom: 6px; }
+        .shop-price { font-size: 13px; color: var(--pink); font-weight: 600; }
+        .shop-badge { display: inline-block; background: #ffffff14; font-size: 11px; padding: 3px 10px; border-radius: 999px; margin-top: 8px; color: #ffffff88; }
+
+        /* ABOUT */
+        #nosotras {
+            background: linear-gradient(135deg, var(--pink) 0%, var(--purple) 100%);
+            color: #fff; text-align: center;
+        }
+        #nosotras .section-title { color: #fff; margin-bottom: 20px; }
+        #nosotras p { font-size: 18px; line-height: 1.8; color: #ffffffcc; max-width: 640px; margin: 0 auto 32px; }
+        .about-img {
+            width: 140px; height: 140px; border-radius: 50%; object-fit: cover;
+            border: 4px solid #ffffff44; margin: 0 auto 32px; display: block;
+            box-shadow: 0 8px 32px #00000033;
+        }
+        .social-icons { display: flex; justify-content: center; gap: 24px; font-size: 28px; }
+        .social-icons a { color: #fff; opacity: 0.8; transition: opacity .2s, transform .2s; text-decoration: none; }
+        .social-icons a:hover { opacity: 1; transform: scale(1.15); }
+
+        /* FOOTER */
+        footer { background: #0D0610; color: #fff; text-align: center; padding: 48px 40px; }
+        footer .logo { font-family: 'Fraunces', serif; font-size: 24px; color: var(--pink); margin-bottom: 8px; }
+        footer p { color: #ffffff55; font-size: 14px; margin-bottom: 24px; }
+        .footer-links { display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; }
+        .footer-links a { color: #ffffff55; font-size: 13px; text-decoration: none; transition: color .2s; }
+        .footer-links a:hover { color: var(--pink); }
+
+        /* ANIMATIONS */
+        @keyframes fadeDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeLeft {
+            from { opacity: 0; transform: translateX(30px); }
+            to   { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50%       { transform: translateY(-8px); }
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50%       { transform: scale(1.02); }
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            nav { padding: 14px 24px; }
+            .nav-links { display: none; }
+            .hero { grid-template-columns: 1fr; padding: 60px 24px; min-height: auto; }
+            .hero-visual { order: -1; }
+            .hero-img-main { border-radius: 32px; }
+            .hero-card { left: 8px; bottom: 16px; }
+            section { padding: 64px 24px; }
+            .tips-grid, .blog-grid, .cluster-grid { grid-template-columns: 1fr; }
+            .cluster-card.pillar { grid-column: auto; }
+            .blog-card.featured { grid-row: auto; }
+            .shop-grid { grid-template-columns: 1fr 1fr; }
+            .stats { gap: 40px; padding: 32px 24px; }
+            .tips-header { flex-direction: column; }
+        }
+    
+        /* selector de idioma (nav) */
+        .lang-switch { display:inline-flex; align-items:center; gap:2px; background:var(--pink-light); border-radius:999px; padding:3px; margin-left:8px; }
+        .lang-switch a, .lang-switch span { font-size:12px; font-weight:700; letter-spacing:.5px; padding:5px 12px; border-radius:999px; text-decoration:none; color:var(--pink); }
+        .lang-switch .current { background:var(--pink); color:#fff; }
+        .nav-right { display:flex; align-items:center; gap:24px; }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <a class="nav-logo" href="/en/" style="text-decoration:none;">
+            <span style="font-size:26px">&#10024;</span>
+            <h1>CuteGlamGirl</h1>
+        </a>
+        <div class="nav-right">
+          <ul class="nav-links">
+            <li><a href="/en/">Home</a></li>
+            <li><a href="#tips">Tips</a></li>
+            <li><a href="/en/blog/">Blog</a></li>
+            <li><a href="#tienda">Shop</a></li>
+            <li><a href="#libros">Books</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+          <div class="lang-switch"><a href="/">ES</a><span class="current">EN</span></div>
+        </div>
+        <a href="#tienda" class="nav-cta"><i class="fas fa-shopping-bag"></i> See Picks</a>
+    </nav>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+        <div>
+            <div class="hero-badge">&#10024; Tips that actually work</div>
+            <h2>Your <em>glow-up</em><br>starts here, girl</h2>
+            <p>Easy skincare, natural makeup and cute outfits for girls 13 to 18. No drama, no overspending. Just you, becoming your best self.</p>
+            <div class="hero-btns">
+                <a href="#tips" class="btn-primary">&#128132; Get my tips &#8594;</a>
+                <a href="/en/blog/" class="btn-secondary">Explore the blog</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-dot hero-dot-1"></div>
+            <div class="hero-dot hero-dot-2"></div>
+            <div class="hero-dot hero-dot-3"></div>
+            <picture>
+                <source type="image/webp" srcset="/img/portada-nueva-600.webp 600w, /img/portada-nueva.webp 912w" sizes="(max-width: 900px) 90vw, 480px">
+                <source type="image/jpeg" srcset="/img/portada-nueva-600.jpg 600w, /img/portada-nueva.jpg 912w" sizes="(max-width: 900px) 90vw, 480px">
+                <img src="/img/portada-nueva.jpg" width="912" height="1136" alt="Young girl with natural curls and soft makeup - CuteGlamGirl" class="hero-img-main" fetchpriority="high">
+            </picture>
+            <div class="hero-card">
+                <div class="hero-card-icon">&#127775;</div>
+                <div class="hero-card-text">
+                    <strong>Tips that last forever</strong>
+                    <span>No trends that fade in 3 days</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured product -->
+        <div class="producto-destacado" style="grid-column:1/-1;background:#fff0f5;border:1.5px solid #f4a7c0;border-radius:16px;padding:20px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;margin:2rem 0 0;">
+          <div>
+            <span style="font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:#c0607a;">Viral right now</span>
+            <h3 style="margin:4px 0 6px;font-size:1.2rem;color:#222;">e.l.f. Halo Glow Liquid Filter</h3>
+            <p style="margin:0;font-size:0.9rem;color:#666;">The glowy filter you see everywhere. Give your skin that lit-from-within look.</p>
+          </div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;">
+            <a href="https://www.amazon.com/dp/B0B5MGBDHZ?tag=khcxrrexvpl-20" target="_blank" rel="nofollow sponsored" style="background:#232F3E;color:#fff;text-decoration:none;padding:10px 18px;border-radius:8px;font-size:0.85rem;font-weight:600;">See on Amazon</a>
+          </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <div class="stats">
+        <div class="stat-item"><strong>+50</strong><span>Timeless tips</span></div>
+        <div class="stat-item"><strong>13&#8211;18</strong><span>Years old</span></div>
+        <div class="stat-item"><strong>100%</strong><span>Real &amp; no filters</span></div>
+        <div class="stat-item"><strong>&#10084;&#65039;</strong><span>Made with love</span></div>
+    </div>
+
+    <!-- TIPS -->
+    <section id="tips">
+        <div class="tips-header">
+            <div>
+                <div class="section-tag">&#10024; Evergreen Tips</div>
+                <h2 class="section-title">What every teen<br>should know</h2>
+            </div>
+            <p class="section-sub">Advice that does not expire. Monday or Friday, 13 or 18: this always works.</p>
+        </div>
+        <div class="tips-grid">
+            <div class="tip-card">
+                <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&q=80" alt="Teen skincare">
+                <div class="tip-card-body">
+                    <span class="tip-tag">Skincare</span>
+                    <h3>5-minute routine for glowing skin</h3>
+                    <p>Cleanse, moisturize and SPF. The trifecta every teen needs before leaving the house.</p>
+                    <a href="/en/blog/5-minute-skincare-routine/" class="tip-link">Read the tip <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="tip-card">
+                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&q=80" alt="Natural makeup">
+                <div class="tip-card-body">
+                    <span class="tip-tag">Makeup</span>
+                    <h3>Glowy 7-minute look for school</h3>
+                    <p>Natural, fresh and cute. Products you already have and a result that lasts all day.</p>
+                    <a href="/en/blog/glowy-school-makeup/" class="tip-link">Read the tip <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="tip-card">
+                <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=600&q=80" alt="Cute outfits">
+                <div class="tip-card-body">
+                    <span class="tip-tag">Fashion</span>
+                    <h3>15 cute outfits with clothes you have</h3>
+                    <p>Stop saying you have nothing to wear. With this you will surprise even yourself.</p>
+                    <a href="/en/blog/15-outfits-clothes-you-already-have/" class="tip-link">Read the tip <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="tips-productos" style="margin:2.5rem 0 0;">
+          <h3 style="font-size:1.1rem;color:#333;margin-bottom:1rem;">Products we use in this tip</h3>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;">
+            <div style="background:#fff;border:1px solid #eee;border-radius:14px;padding:16px;">
+              <p style="margin:0 0 2px;font-size:0.85rem;color:#999;">CeraVe</p>
+              <p style="margin:0 0 10px;font-weight:600;font-size:0.95rem;color:#222;">Hydrating Facial Cleanser</p>
+              <p style="margin:0 0 12px;font-size:0.8rem;color:#666;">Gentle cleanser with ceramides and hyaluronic acid. Perfect for sensitive skin.</p>
+              <a href="https://www.amazon.com/dp/B01MSSDEPK?tag=khcxrrexvpl-20" target="_blank" rel="nofollow sponsored" style="display:block;text-align:center;background:#FF9900;color:#fff;text-decoration:none;padding:8px;border-radius:7px;font-size:0.8rem;font-weight:600;">See on Amazon</a>
+            </div>
+            <div style="background:#fff;border:1px solid #eee;border-radius:14px;padding:16px;">
+              <p style="margin:0 0 2px;font-size:0.85rem;color:#999;">Starface</p>
+              <p style="margin:0 0 10px;font-weight:600;font-size:0.95rem;color:#222;">Hydro-Stars Pimple Patches</p>
+              <p style="margin:0 0 12px;font-size:0.8rem;color:#666;">The most viral star-shaped patches on TikTok. They calm redness overnight.</p>
+              <a href="https://www.amazon.com/dp/B0B4V88LMC?tag=khcxrrexvpl-20" target="_blank" rel="nofollow sponsored" style="display:block;text-align:center;background:#FF9900;color:#fff;text-decoration:none;padding:8px;border-radius:7px;font-size:0.8rem;font-weight:600;">See on Amazon</a>
+            </div>
+            <div style="background:#fff;border:1px solid #eee;border-radius:14px;padding:16px;">
+              <p style="margin:0 0 2px;font-size:0.85rem;color:#999;">Hero Cosmetics</p>
+              <p style="margin:0 0 10px;font-weight:600;font-size:0.95rem;color:#222;">Mighty Patch Original</p>
+              <p style="margin:0 0 12px;font-size:0.8rem;color:#666;">The #1 best-selling acne patch. It works while you sleep.</p>
+              <a href="https://www.amazon.com/dp/B074PVTPBW?tag=khcxrrexvpl-20" target="_blank" rel="nofollow sponsored" style="display:block;text-align:center;background:#FF9900;color:#fff;text-decoration:none;padding:8px;border-radius:7px;font-size:0.8rem;font-weight:600;">See on Amazon</a>
+            </div>
+            <div style="background:#fff;border:1px solid #eee;border-radius:14px;padding:16px;">
+              <p style="margin:0 0 2px;font-size:0.85rem;color:#999;">e.l.f. Cosmetics</p>
+              <p style="margin:0 0 10px;font-weight:600;font-size:0.95rem;color:#222;">Power Grip Primer</p>
+              <p style="margin:0 0 12px;font-size:0.8rem;color:#666;">Primer that makes your makeup last all day. Super smooth gel texture.</p>
+              <a href="https://www.amazon.com/dp/B09XMYFTB7?tag=khcxrrexvpl-20" target="_blank" rel="nofollow sponsored" style="display:block;text-align:center;background:#FF9900;color:#fff;text-decoration:none;padding:8px;border-radius:7px;font-size:0.8rem;font-weight:600;">See on Amazon</a>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog">
+        <div class="section-tag">&#128214; CuteGlam Blog</div>
+        <h2 class="section-title">Read me whenever<br>you need inspo</h2>
+        <div class="blog-grid">
+            <div class="blog-card featured">
+                <img src="https://images.unsplash.com/photo-1487412912498-0447578fcca8?w=700&q=80" alt="Skincare">
+                <div class="blog-body">
+                    <div class="blog-meta"><span>Skincare</span><span>&bull;</span><span>8 min read</span></div>
+                    <h3>10 skincare mistakes every teen makes (and how to avoid them)</h3>
+                    <a href="/en/blog/skincare-mistakes-teens/" class="read-link">Read now &#8594;</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="https://images.unsplash.com/photo-1519415943484-9fa1873496d4?w=400&q=80" alt="Makeup">
+                <div class="blog-body">
+                    <div class="blog-meta"><span>Makeup</span><span>&bull;</span><span>6 min</span></div>
+                    <h3>Glowy 7-minute makeup look for school</h3>
+                    <a href="/en/blog/glowy-school-makeup/" class="read-link">Read now &#8594;</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=400&q=80" alt="Hair">
+                <div class="blog-body">
+                    <div class="blog-meta"><span>Hair</span><span>&bull;</span><span>7 min</span></div>
+                    <h3>Healthy, shiny hair without spending a lot</h3>
+                    <a href="/en/blog/healthy-hair-on-a-budget/" class="read-link">Read now &#8594;</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400&q=80" alt="Wellness">
+                <div class="blog-body">
+                    <div class="blog-meta"><span>Wellness</span><span>&bull;</span><span>5 min</span></div>
+                    <h3>How to feel glam and confident every day</h3>
+                    <a href="/en/blog/feel-confident-every-day/" class="read-link">Read now &#8594;</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- CLUSTER: Confidence & growth -->
+        <div class="cluster-head">
+            <div class="section-tag">&#128153; Confidence &amp; growth</div>
+            <h3>What your future self<br>will thank you for</h3>
+        </div>
+        <div class="cluster-grid">
+            <a class="cluster-card pillar" href="/en/blog/things-to-enjoy-as-a-teenager/">
+                <span class="c-tag">Confidence &amp; growth</span>
+                <h3>5 Things Your Future Self Will Thank You for Enjoying</h3>
+                <span class="c-read">Read &#8594;</span>
+            </a>
+            <a class="cluster-card" href="/en/blog/stop-worrying-what-people-think/">
+                <span class="c-tag">Confidence &amp; growth</span>
+                <h3>How to Stop Worrying About What People Think</h3>
+                <span class="c-read">Read &#8594;</span>
+            </a>
+            <a class="cluster-card" href="/en/blog/get-along-with-your-family/">
+                <span class="c-tag">Confidence &amp; growth</span>
+                <h3>How to Get Along With Your Family Without Losing Yourself</h3>
+                <span class="c-read">Read &#8594;</span>
+            </a>
+            <a class="cluster-card" href="/en/blog/how-to-be-braver/">
+                <span class="c-tag">Confidence &amp; growth</span>
+                <h3>How to Be Braver and Beat the Embarrassment</h3>
+                <span class="c-read">Read &#8594;</span>
+            </a>
+            <a class="cluster-card" href="/en/blog/what-to-learn-as-a-teenager/">
+                <span class="c-tag">Confidence &amp; growth</span>
+                <h3>What&#39;s Actually Worth Learning as a Teenager</h3>
+                <span class="c-read">Read &#8594;</span>
+            </a>
+            <a class="cluster-card" href="/en/blog/get-over-school-drama/">
+                <span class="c-tag">Confidence &amp; growth</span>
+                <h3>How to Get Over School Drama or a Broken Heart</h3>
+                <span class="c-read">Read &#8594;</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- TIENDA / SHOP -->
+    <section id="tienda" style="padding:3rem 1.5rem;max-width:1100px;margin:0 auto;">
+      <h2 style="text-align:center;margin-bottom:0.5rem;">Our shop</h2>
+      <p style="text-align:center;color:#ffffffaa;font-size:0.9rem;margin-bottom:2.5rem;">Real Amazon deals, refreshed regularly. Affiliate links.</p>
+
+      <h3 style="font-size:1.15rem;margin:0 0 1rem;color:#fff;display:flex;align-items:center;gap:8px;">&#10024; Amazon picks for influencers</h3>
+      <div class="shop-grid" style="margin-top:0;">
+        <div data-expires="2026-07-15" style="background:#fff;border:1px solid #f0e0ea;border-radius:16px;padding:18px;display:flex;flex-direction:column;">
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;">
+            <span style="font-size:11px;background:#FF9900;color:#fff;padding:3px 10px;border-radius:20px;font-weight:700;">Amazon Picks</span>
+          </div>
+          <p style="margin:0 0 14px;font-weight:700;font-size:0.95rem;color:#222;line-height:1.3;flex:1;">L&#39;Oreal Paris Infallible Setting Spray</p>
+          <a href="https://www.amazon.com/dp/B0CNQ4DJRV?tag=khcxrrexvpl-20" target="_blank" rel="nofollow sponsored" style="display:block;text-align:center;background:#232F3E;color:#fff;text-decoration:none;padding:10px;border-radius:8px;font-size:0.82rem;font-weight:700;">See on Amazon</a>
+        </div>
+        <div data-expires="2026-07-15" style="background:#fff;border:1px solid #f0e0ea;border-radius:16px;padding:18px;display:flex;flex-direction:column;">
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;">
+            <span style="font-size:11px;background:#FF9900;color:#fff;padding:3px 10px;border-radius:20px;font-weight:700;">Amazon Picks</span>
+          </div>
+          <p style="margin:0 0 14px;font-weight:700;font-size:0.95rem;color:#222;line-height:1.3;flex:1;">Eucerin Anti-Pigment Dual Serum 30ml</p>
+          <a href="https://www.amazon.com/dp/B07SJSZHD7?tag=khcxrrexvpl-20" target="_blank" rel="nofollow sponsored" style="display:block;text-align:center;background:#232F3E;color:#fff;text-decoration:none;padding:10px;border-radius:8px;font-size:0.82rem;font-weight:700;">See on Amazon</a>
+        </div>
+        <div data-expires="2026-07-15" style="background:#fff;border:1px solid #f0e0ea;border-radius:16px;padding:18px;display:flex;flex-direction:column;">
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;">
+            <span style="font-size:11px;background:#FF9900;color:#fff;padding:3px 10px;border-radius:20px;font-weight:700;">Amazon Picks</span>
+          </div>
+          <p style="margin:0 0 14px;font-weight:700;font-size:0.95rem;color:#222;line-height:1.3;flex:1;">Herbal Essences Coconut Water &amp; Jasmine Shampoo</p>
+          <a href="https://www.amazon.com/dp/B0F13MQ2LX?tag=khcxrrexvpl-20" target="_blank" rel="nofollow sponsored" style="display:block;text-align:center;background:#232F3E;color:#fff;text-decoration:none;padding:10px;border-radius:8px;font-size:0.82rem;font-weight:700;">See on Amazon</a>
+        </div>
+        <div data-expires="2026-07-15" style="background:#fff;border:1px solid #f0e0ea;border-radius:16px;padding:18px;display:flex;flex-direction:column;">
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;">
+            <span style="font-size:11px;background:#FF9900;color:#fff;padding:3px 10px;border-radius:20px;font-weight:700;">Amazon Picks</span>
+          </div>
+          <p style="margin:0 0 14px;font-weight:700;font-size:0.95rem;color:#222;line-height:1.3;flex:1;">Hawaiian Tropic Silk Hydration Sunscreen SPF 50 180ml</p>
+          <a href="https://www.amazon.com/dp/B076JJ65K5?tag=khcxrrexvpl-20" target="_blank" rel="nofollow sponsored" style="display:block;text-align:center;background:#232F3E;color:#fff;text-decoration:none;padding:10px;border-radius:8px;font-size:0.82rem;font-weight:700;">See on Amazon</a>
+        </div>
+        <div data-expires="2026-07-15" style="background:#fff;border:1px solid #f0e0ea;border-radius:16px;padding:18px;display:flex;flex-direction:column;">
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;">
+            <span style="font-size:11px;background:#FF9900;color:#fff;padding:3px 10px;border-radius:20px;font-weight:700;">Amazon Picks</span>
+          </div>
+          <p style="margin:0 0 14px;font-weight:700;font-size:0.95rem;color:#222;line-height:1.3;flex:1;">Conair Turbo Ionic Hair Dryer 1875W</p>
+          <a href="https://www.amazon.com/dp/B00UO5JFS4?tag=khcxrrexvpl-20" target="_blank" rel="nofollow sponsored" style="display:block;text-align:center;background:#232F3E;color:#fff;text-decoration:none;padding:10px;border-radius:8px;font-size:0.82rem;font-weight:700;">See on Amazon</a>
+        </div>
+        <div data-expires="2026-07-15" style="background:#fff;border:1px solid #f0e0ea;border-radius:16px;padding:18px;display:flex;flex-direction:column;">
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;">
+            <span style="font-size:11px;background:#FF9900;color:#fff;padding:3px 10px;border-radius:20px;font-weight:700;">Amazon Picks</span>
+          </div>
+          <p style="margin:0 0 14px;font-weight:700;font-size:0.95rem;color:#222;line-height:1.3;flex:1;">It Cosmetics CC+ Natural Matte Foundation</p>
+          <a href="https://www.amazon.com/dp/B0CVBKVB2Y?tag=khcxrrexvpl-20" target="_blank" rel="nofollow sponsored" style="display:block;text-align:center;background:#232F3E;color:#fff;text-decoration:none;padding:10px;border-radius:8px;font-size:0.82rem;font-weight:700;">See on Amazon</a>
+        </div>
+        <div data-expires="2026-07-15" style="background:#fff;border:1px solid #f0e0ea;border-radius:16px;padding:18px;display:flex;flex-direction:column;">
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;">
+            <span style="font-size:11px;background:#FF9900;color:#fff;padding:3px 10px;border-radius:20px;font-weight:700;">Amazon Picks</span>
+          </div>
+          <p style="margin:0 0 14px;font-weight:700;font-size:0.95rem;color:#222;line-height:1.3;flex:1;">Moroccanoil All-in-One Leave-In Conditioner 160ml</p>
+          <a href="https://www.amazon.com/dp/B08DPLN32V?tag=khcxrrexvpl-20" target="_blank" rel="nofollow sponsored" style="display:block;text-align:center;background:#232F3E;color:#fff;text-decoration:none;padding:10px;border-radius:8px;font-size:0.82rem;font-weight:700;">See on Amazon</a>
+        </div>
+      </div>
+
+      <h3 style="font-size:1.15rem;margin:2.5rem 0 1rem;color:#fff;display:flex;align-items:center;gap:8px;">&#128293; Hot deals</h3>
+      <div class="shop-grid" style="margin-top:0;">
+        <div data-expires="2026-06-02" style="background:#fff;border:1px solid #f7dada;border-radius:16px;padding:18px;display:flex;flex-direction:column;">
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;">
+            <span style="font-size:11px;background:#E63950;color:#fff;padding:3px 10px;border-radius:20px;font-weight:700;">Hot Deal</span>
+          </div>
+          <p style="margin:0 0 14px;font-weight:700;font-size:0.95rem;color:#222;line-height:1.3;flex:1;">L&#39;Oreal Elvive Extraordinary Oil</p>
+          <a href="https://www.amazon.com/s?k=L%27Oreal+Elvive+Extraordinary+Oil&tag=khcxrrexvpl-20" target="_blank" rel="nofollow sponsored" style="display:block;text-align:center;background:#232F3E;color:#fff;text-decoration:none;padding:10px;border-radius:8px;font-size:0.82rem;font-weight:700;">See on Amazon</a>
+        </div>
+        <div data-expires="2026-06-02" style="background:#fff;border:1px solid #f7dada;border-radius:16px;padding:18px;display:flex;flex-direction:column;">
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;">
+            <span style="font-size:11px;background:#E63950;color:#fff;padding:3px 10px;border-radius:20px;font-weight:700;">Hot Deal</span>
+          </div>
+          <p style="margin:0 0 14px;font-weight:700;font-size:0.95rem;color:#222;line-height:1.3;flex:1;">NIVEA Face Sunscreen Oil-Control SPF</p>
+          <a href="https://www.amazon.com/s?k=NIVEA+Face+Sunscreen+Oil-Control+SPF&tag=khcxrrexvpl-20" target="_blank" rel="nofollow sponsored" style="display:block;text-align:center;background:#232F3E;color:#fff;text-decoration:none;padding:10px;border-radius:8px;font-size:0.82rem;font-weight:700;">See on Amazon</a>
+        </div>
+        <div data-expires="2026-06-02" style="background:#fff;border:1px solid #f7dada;border-radius:16px;padding:18px;display:flex;flex-direction:column;">
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;">
+            <span style="font-size:11px;background:#E63950;color:#fff;padding:3px 10px;border-radius:20px;font-weight:700;">Hot Deal</span>
+          </div>
+          <p style="margin:0 0 14px;font-weight:700;font-size:0.95rem;color:#222;line-height:1.3;flex:1;">La Roche-Posay Cicaplast Multi-Repair Balm</p>
+          <a href="https://www.amazon.com/s?k=La+Roche-Posay+Cicaplast+Multi-Repair+Balm&tag=khcxrrexvpl-20" target="_blank" rel="nofollow sponsored" style="display:block;text-align:center;background:#232F3E;color:#fff;text-decoration:none;padding:10px;border-radius:8px;font-size:0.82rem;font-weight:700;">See on Amazon</a>
+        </div>
+        <div data-expires="2026-06-02" style="background:#fff;border:1px solid #f7dada;border-radius:16px;padding:18px;display:flex;flex-direction:column;">
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;">
+            <span style="font-size:11px;background:#E63950;color:#fff;padding:3px 10px;border-radius:20px;font-weight:700;">Hot Deal</span>
+          </div>
+          <p style="margin:0 0 14px;font-weight:700;font-size:0.95rem;color:#222;line-height:1.3;flex:1;">CeraVe Blemish Control Cleanser</p>
+          <a href="https://www.amazon.com/s?k=CeraVe+Blemish+Control+Cleanser&tag=khcxrrexvpl-20" target="_blank" rel="nofollow sponsored" style="display:block;text-align:center;background:#232F3E;color:#fff;text-decoration:none;padding:10px;border-radius:8px;font-size:0.82rem;font-weight:700;">See on Amazon</a>
+        </div>
+        <div data-expires="2026-06-02" style="background:#fff;border:1px solid #f7dada;border-radius:16px;padding:18px;display:flex;flex-direction:column;">
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;">
+            <span style="font-size:11px;background:#E63950;color:#fff;padding:3px 10px;border-radius:20px;font-weight:700;">Hot Deal</span>
+          </div>
+          <p style="margin:0 0 14px;font-weight:700;font-size:0.95rem;color:#222;line-height:1.3;flex:1;">Neutrogena Hydro Boost Water Gel 50g</p>
+          <a href="https://www.amazon.com/s?k=Neutrogena+Hydro+Boost+Water+Gel+50g&tag=khcxrrexvpl-20" target="_blank" rel="nofollow sponsored" style="display:block;text-align:center;background:#232F3E;color:#fff;text-decoration:none;padding:10px;border-radius:8px;font-size:0.82rem;font-weight:700;">See on Amazon</a>
+        </div>
+        <div data-expires="2026-06-02" style="background:#fff;border:1px solid #f7dada;border-radius:16px;padding:18px;display:flex;flex-direction:column;">
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;">
+            <span style="font-size:11px;background:#E63950;color:#fff;padding:3px 10px;border-radius:20px;font-weight:700;">Hot Deal</span>
+          </div>
+          <p style="margin:0 0 14px;font-weight:700;font-size:0.95rem;color:#222;line-height:1.3;flex:1;">TOCOBO Cotton Sun Stick SPF50+ PA+++</p>
+          <a href="https://www.amazon.com/s?k=TOCOBO+Cotton+Sun+Stick+SPF50%2B+PA%2B%2B%2B&tag=khcxrrexvpl-20" target="_blank" rel="nofollow sponsored" style="display:block;text-align:center;background:#232F3E;color:#fff;text-decoration:none;padding:10px;border-radius:8px;font-size:0.82rem;font-weight:700;">See on Amazon</a>
+        </div>
+        <div data-expires="2026-06-02" style="background:#fff;border:1px solid #f7dada;border-radius:16px;padding:18px;display:flex;flex-direction:column;">
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;">
+            <span style="font-size:11px;background:#E63950;color:#fff;padding:3px 10px;border-radius:20px;font-weight:700;">Hot Deal</span>
+          </div>
+          <p style="margin:0 0 14px;font-weight:700;font-size:0.95rem;color:#222;line-height:1.3;flex:1;">Garnier Express Brightening Vitamin C Kit</p>
+          <a href="https://www.amazon.com/s?k=Garnier+Express+Brightening+Vitamin+C+Kit&tag=khcxrrexvpl-20" target="_blank" rel="nofollow sponsored" style="display:block;text-align:center;background:#232F3E;color:#fff;text-decoration:none;padding:10px;border-radius:8px;font-size:0.82rem;font-weight:700;">See on Amazon</a>
+        </div>
+      </div>
+
+      <p style="text-align:center;margin-top:2rem;font-size:0.75rem;color:#ffffff88;">
+        As an Amazon Associate we earn from qualifying purchases. Prices and discounts change, check Amazon for the current price. <a href="#disclosure" style="color:#ffffffaa;">See full disclosure</a>
+      </p>
+    </section>
+
+    <!-- BOOKS -->
+    <section id="libros" style="padding:4rem 1.5rem;background:#fff0f5;">
+      <div style="max-width:1100px;margin:0 auto;">
+        <div style="text-align:center;margin-bottom:2.5rem;">
+          <span style="font-size:2rem;">&#128218;</span>
+          <h2 style="font-size:2rem;font-weight:700;color:#1a1a2e;margin:0.5rem 0 0.75rem;">Books that will change you</h2>
+          <p style="color:#555;font-size:1rem;max-width:520px;margin:0 auto;line-height:1.6;">More than skincare, the real glow-up comes from within. These are the books I would read (or already read) to feel more confident, more me.</p>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.25rem;">
+      <div style="background:#fff;border-radius:16px;padding:1.5rem 1.25rem 1.25rem;border:2px solid #ff6b9d;box-shadow:0 12px 32px #ff6b9d33;display:flex;flex-direction:column;gap:0.7rem;position:relative;">
+        <span style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);white-space:nowrap;background:#ff6b9d;color:#fff;font-size:0.72rem;font-weight:700;padding:4px 14px;border-radius:20px;box-shadow:0 4px 12px #ff6b9d55;">&#11088; Our favorite</span>
+        <div style="font-size:2rem;text-align:center;">&#128211;</div>
+        <h3 style="font-size:0.95rem;font-weight:700;color:#1a1a2e;line-height:1.4;margin:0;">Gu&iacute;a de Campo Para Entender a los Humanos</h3>
+        <p style="font-size:0.78rem;color:#ff6b9d;font-weight:600;margin:0;line-height:1.4;">A novel for teen girls learning to understand themselves</p>
+        <p style="font-size:0.82rem;color:#666;margin:0;line-height:1.5;">Catalina is 13 and doesn&#39;t understand people. Her biologist grandmother gives her a notebook and one instruction: study humans like I studied animals. Start with the hardest one, yourself. A novel about growing up, self-compassion, and choosing who to be. For girls 12-16.</p>
+        <p style="font-size:0.72rem;color:#999;margin:0;line-height:1.4;">&#128214; Mara Sol&iacute;s &middot; ages 12-17 &middot; 83 pages &middot; Spanish</p>
+        <p style="font-size:0.74rem;color:#b06a86;font-style:italic;margin:0;line-height:1.4;">&#128153; For girls 12 to 16 learning to see themselves with kindness.</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;"><a href="https://www.amazon.com/dp/B0H5TX1X8G?tag=khcxrrexvpl-20" target="_blank" rel="nofollow sponsored" style="font-size:0.78rem;padding:5px 12px;border-radius:20px;background:#ff6b9d;color:#fff;text-decoration:none;font-weight:600;">Kindle</a><a href="https://www.amazon.com/dp/B0H5TX1X8G?tag=khcxrrexvpl-20" target="_blank" rel="nofollow sponsored" style="font-size:0.78rem;padding:5px 12px;border-radius:20px;background:#fff0f5;color:#ff6b9d;border:1px solid #ff6b9d;text-decoration:none;font-weight:600;">Print</a></div>
+      </div>
+      <div style="background:#fff;border-radius:16px;padding:1.25rem;border:1px solid #ffd6e7;display:flex;flex-direction:column;gap:0.75rem;">
+        <div style="font-size:2rem;text-align:center;">&#128172;</div>
+        <h3 style="font-size:0.95rem;font-weight:700;color:#1a1a2e;line-height:1.4;margin:0;">100 Positive Affirmations for Girls</h3>
+        <p style="font-size:0.82rem;color:#666;margin:0;line-height:1.5;">Build your self-esteem and confidence with affirmations that actually feel like yours.</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;"><a href="https://www.amazon.com/dp/B0DHV4THHQ?tag=khcxrrexvpl-20" target="_blank" rel="nofollow sponsored" style="font-size:0.78rem;padding:5px 12px;border-radius:20px;background:#ff6b9d;color:#fff;text-decoration:none;font-weight:600;">Kindle</a><a href="https://www.amazon.com/dp/B0DJDN5S8N?tag=khcxrrexvpl-20" target="_blank" rel="nofollow sponsored" style="font-size:0.78rem;padding:5px 12px;border-radius:20px;background:#fff0f5;color:#ff6b9d;border:1px solid #ff6b9d;text-decoration:none;font-weight:600;">Print</a></div>
+      </div>
+      <div style="background:#fff;border-radius:16px;padding:1.25rem;border:1px solid #ffd6e7;display:flex;flex-direction:column;gap:0.75rem;">
+        <div style="font-size:2rem;text-align:center;">&#128581;&#8205;&#9792;&#65039;</div>
+        <h3 style="font-size:0.95rem;font-weight:700;color:#1a1a2e;line-height:1.4;margin:0;">This Is How I Say No</h3>
+        <p style="font-size:0.82rem;color:#666;margin:0;line-height:1.5;">Stories for learning to set boundaries with respect. Because saying no is also loving yourself.</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;"><a href="https://www.amazon.com/dp/B0G1KPSFRC?tag=khcxrrexvpl-20" target="_blank" rel="nofollow sponsored" style="font-size:0.78rem;padding:5px 12px;border-radius:20px;background:#ff6b9d;color:#fff;text-decoration:none;font-weight:600;">Kindle</a></div>
+      </div>
+      <div style="background:#fff;border-radius:16px;padding:1.25rem;border:1px solid #ffd6e7;display:flex;flex-direction:column;gap:0.75rem;">
+        <div style="font-size:2rem;text-align:center;">&#10024;</div>
+        <h3 style="font-size:0.95rem;font-weight:700;color:#1a1a2e;line-height:1.4;margin:0;">What If You Could Switch Off the Shyness?</h3>
+        <p style="font-size:0.82rem;color:#666;margin:0;line-height:1.5;">Spark your courage. For when everything feels too heavy and you want to keep going anyway.</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;"><a href="https://www.amazon.com/dp/B0DRNNNVY9?tag=khcxrrexvpl-20" target="_blank" rel="nofollow sponsored" style="font-size:0.78rem;padding:5px 12px;border-radius:20px;background:#ff6b9d;color:#fff;text-decoration:none;font-weight:600;">Kindle</a><a href="https://www.amazon.com/dp/B0DRVY6B3Z?tag=khcxrrexvpl-20" target="_blank" rel="nofollow sponsored" style="font-size:0.78rem;padding:5px 12px;border-radius:20px;background:#fff0f5;color:#ff6b9d;border:1px solid #ff6b9d;text-decoration:none;font-weight:600;">Print</a></div>
+      </div>
+      <div style="background:#fff;border-radius:16px;padding:1.25rem;border:1px solid #ffd6e7;display:flex;flex-direction:column;gap:0.75rem;">
+        <div style="font-size:2rem;text-align:center;">&#127916;</div>
+        <h3 style="font-size:0.95rem;font-weight:700;color:#1a1a2e;line-height:1.4;margin:0;">In Your Movie, You Are the Hero</h3>
+        <p style="font-size:0.82rem;color:#666;margin:0;line-height:1.5;">How to write, direct and star in the best adventure of your life. Spoiler: you already have everything you need.</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;"><a href="https://www.amazon.com/dp/B0DSB1ZRHB?tag=khcxrrexvpl-20" target="_blank" rel="nofollow sponsored" style="font-size:0.78rem;padding:5px 12px;border-radius:20px;background:#ff6b9d;color:#fff;text-decoration:none;font-weight:600;">Kindle</a><a href="https://www.amazon.com/dp/B0DSBYCHVZ?tag=khcxrrexvpl-20" target="_blank" rel="nofollow sponsored" style="font-size:0.78rem;padding:5px 12px;border-radius:20px;background:#fff0f5;color:#ff6b9d;border:1px solid #ff6b9d;text-decoration:none;font-weight:600;">Print</a></div>
+      </div>
+      <div style="background:#fff;border-radius:16px;padding:1.25rem;border:1px solid #ffd6e7;display:flex;flex-direction:column;gap:0.75rem;">
+        <div style="font-size:2rem;text-align:center;">&#129504;</div>
+        <h3 style="font-size:0.95rem;font-weight:700;color:#1a1a2e;line-height:1.4;margin:0;">Tricks to Take Care of Your Mind</h3>
+        <p style="font-size:0.82rem;color:#666;margin:0;line-height:1.5;">Discover how thinking, resting and creating can change your life. The mental skincare nobody teaches you.</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;"><a href="https://www.amazon.com/dp/B0DSCS4FZS?tag=khcxrrexvpl-20" target="_blank" rel="nofollow sponsored" style="font-size:0.78rem;padding:5px 12px;border-radius:20px;background:#ff6b9d;color:#fff;text-decoration:none;font-weight:600;">Kindle</a></div>
+      </div>
+      <div style="background:#fff;border-radius:16px;padding:1.25rem;border:1px solid #ffd6e7;display:flex;flex-direction:column;gap:0.75rem;">
+        <div style="font-size:2rem;text-align:center;">&#128170;</div>
+        <h3 style="font-size:0.95rem;font-weight:700;color:#1a1a2e;line-height:1.4;margin:0;">The Power to Be Brave Is Inside You</h3>
+        <p style="font-size:0.82rem;color:#666;margin:0;line-height:1.5;">Face your challenges with a positive attitude. Because being brave is not about having no fear, it is about keeping going even when you do.</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;"><a href="https://www.amazon.com/dp/B0DQ9DNWJL?tag=khcxrrexvpl-20" target="_blank" rel="nofollow sponsored" style="font-size:0.78rem;padding:5px 12px;border-radius:20px;background:#ff6b9d;color:#fff;text-decoration:none;font-weight:600;">Kindle</a></div>
+      </div>
+      <div style="background:#fff;border-radius:16px;padding:1.25rem;border:1px solid #ffd6e7;display:flex;flex-direction:column;gap:0.75rem;">
+        <div style="font-size:2rem;text-align:center;">&#127775;</div>
+        <h3 style="font-size:0.95rem;font-weight:700;color:#1a1a2e;line-height:1.4;margin:0;">Kailo&#39;s Life Toolkit</h3>
+        <p style="font-size:0.82rem;color:#666;margin:0;line-height:1.5;">5 tools to be a confident, happy girl. Simple, direct, with real activities.</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;"><a href="https://www.amazon.com/dp/B0DLNZQYFM?tag=khcxrrexvpl-20" target="_blank" rel="nofollow sponsored" style="font-size:0.78rem;padding:5px 12px;border-radius:20px;background:#ff6b9d;color:#fff;text-decoration:none;font-weight:600;">Kindle</a><a href="https://www.amazon.com/dp/B0DQKR473S?tag=khcxrrexvpl-20" target="_blank" rel="nofollow sponsored" style="font-size:0.78rem;padding:5px 12px;border-radius:20px;background:#fff0f5;color:#ff6b9d;border:1px solid #ff6b9d;text-decoration:none;font-weight:600;">Print</a></div>
+      </div>
+        </div>
+        <div style="text-align:center;margin-top:2rem;">
+          <a href="https://www.amazon.com/s?k=kindle+teen+girls&tag=khcxrrexvpl-20" target="_blank" rel="nofollow sponsored" style="display:inline-block;font-size:0.85rem;font-weight:700;padding:11px 26px;border-radius:30px;background:#1a1a2e;color:#fff;text-decoration:none;">&#128269; Browse more Kindle on Amazon</a>
+        </div>
+        <p style="text-align:center;font-size:0.78rem;color:#999;margin-top:2rem;">
+          Links go directly to Amazon. As an Amazon Associate we earn from qualifying purchases &#128153;
+        </p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <picture>
+            <source type="image/webp" srcset="/img/portada-nueva-300.webp">
+            <img src="/img/portada-nueva-300.jpg" width="300" height="374" alt="Young girl with natural curls and soft makeup - CuteGlamGirl" class="about-img" loading="lazy">
+        </picture>
+        <div class="section-tag" style="background:#ffffff25;color:#fff;">&#128153; About Me</div>
+        <h2 class="section-title">Hi! I&#39;m CuteGlamGirl &#10024;</h2>
+        <p>I&#39;m 13 and I love everything cute and glam. My dad and I created this space to share real tips that are easy and that always work. No one-week trends, just advice that sticks with you forever.</p>
+        <div class="social-icons">
+            <span style="opacity:0.35;display:flex;flex-direction:column;align-items:center;gap:4px;">
+                <i class="fab fa-tiktok" style="font-size:28px;"></i>
+                <span style="font-size:10px;letter-spacing:1px;text-transform:uppercase;">Coming soon</span>
+            </span>
+            <span style="opacity:0.35;display:flex;flex-direction:column;align-items:center;gap:4px;">
+                <i class="fab fa-instagram" style="font-size:28px;"></i>
+                <span style="font-size:10px;letter-spacing:1px;text-transform:uppercase;">Coming soon</span>
+            </span>
+            <span style="opacity:0.35;display:flex;flex-direction:column;align-items:center;gap:4px;">
+                <i class="fab fa-pinterest" style="font-size:28px;"></i>
+                <span style="font-size:10px;letter-spacing:1px;text-transform:uppercase;">Coming soon</span>
+            </span>
+        </div>
+        <p style="margin-top:16px;font-size:14px;">Coming soon on all socials! &#10024;</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="logo">CuteGlamGirl</div>
+        <p>Made with lots of love for all the glam girls of the world &#10024; &copy; 2026</p>
+        <div class="footer-links">
+            <a href="#disclosure">Affiliate Disclosure</a>
+            <a href="#">Contact</a>
+        </div>
+        <div id="disclosure" style="margin-top:32px;padding-top:24px;border-top:1px solid #ffffff15;max-width:640px;margin-left:auto;margin-right:auto;">
+            <p style="color:#ffffff66;font-size:12px;line-height:1.8;text-align:center;">
+                &#11088; CuteGlamGirl.com is a participant in the <strong style="color:#ffffff99;">Amazon Services LLC Associates Program</strong> (khcxrrexvpl-20), an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+    (function() {
+      const hoy = new Date();
+      hoy.setHours(0,0,0,0);
+      document.querySelectorAll('[data-expires]').forEach(function(card) {
+        const exp = new Date(card.getAttribute('data-expires'));
+        if (exp < hoy) {
+          card.style.display = 'none';
+        }
+      });
+
+      // Oculta el encabezado de cada grupo cuyas tarjetas estén todas vencidas.
+      // Cada grupo es un <h3> seguido de su <div class="shop-grid">.
+      document.querySelectorAll('#tienda .shop-grid').forEach(function(grid) {
+        const visiblesGrupo = grid.querySelectorAll(
+          '[data-expires]:not([style*="display: none"])'
+        );
+        if (visiblesGrupo.length === 0) {
+          grid.style.display = 'none';
+          const header = grid.previousElementSibling;
+          if (header && header.tagName === 'H3') {
+            header.style.display = 'none';
+          }
+        }
+      });
+
+      // Si todos los productos de #tienda están ocultos, muestra mensaje
+      const tienda = document.getElementById('tienda');
+      if (tienda) {
+        const visibles = tienda.querySelectorAll(
+          '[data-expires]:not([style*="display: none"])'
+        );
+        if (visibles.length === 0) {
+          const aviso = document.createElement('p');
+          aviso.textContent =
+            'Pronto actualizamos nuestras recomendaciones. ¡Vuelve pronto!';
+          aviso.style.cssText =
+            'text-align:center;color:#aaa;padding:2rem;font-size:0.9rem;';
+          tienda.appendChild(aviso);
+        }
+      }
+    })();
+    </script>
+</body>
+</html>
