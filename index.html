@@ -15,6 +15,16 @@
     <meta name="description" content="Tips de belleza atemporales, outfits cute y consejos glam para chicas de 13-18 años.">
     <title>CuteGlamGirl ✨ | Tu Glow-Up Empieza Aquí</title>
 
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CuteGlamGirl">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:title" content="CuteGlamGirl ✨ | Tu Glow-Up Empieza Aquí">
+    <meta property="og:description" content="Tips de belleza atemporales, outfits cute y consejos glam para chicas de 13-18 años.">
+    <meta property="og:url" content="https://cuteglamgirl.com/">
+    <meta property="og:image" content="https://cuteglamgirl.com/img/portada-nueva.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://cuteglamgirl.com/img/portada-nueva.jpg">
+
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -169,6 +179,19 @@
         .blog-card.featured .blog-body h3 { font-size: 24px; }
         .read-link { font-size: 13px; font-weight: 600; color: var(--pink); text-decoration: none; }
 
+        /* BLOG · CLÚSTER CONFIANZA Y CRECIMIENTO */
+        .cluster-head { margin: 64px 0 8px; }
+        .cluster-head .section-tag { background: #fff; }
+        .cluster-head h3 { font-size: clamp(24px, 3vw, 34px); letter-spacing: -1px; line-height: 1.15; }
+        .cluster-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 28px; }
+        .cluster-card { background: #fff; border: 1px solid var(--pink-light); border-radius: 22px; padding: 26px; text-decoration: none; color: var(--dark); display: flex; flex-direction: column; transition: transform .3s, box-shadow .3s; }
+        .cluster-card:hover { transform: translateY(-5px); box-shadow: 0 22px 54px #FF6B9D1f; }
+        .cluster-card.pillar { grid-column: 1 / -1; background: linear-gradient(135deg, #fff, var(--pink-light)); }
+        .cluster-card .c-tag { font-size: 11px; font-weight: 700; color: var(--pink); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+        .cluster-card h3 { font-size: 20px; line-height: 1.25; letter-spacing: -.3px; margin-bottom: 14px; flex: 1; }
+        .cluster-card.pillar h3 { font-size: 26px; }
+        .cluster-card .c-read { color: var(--pink); font-weight: 600; font-size: 14px; }
+
         /* TIENDA */
         #tienda { background: var(--dark); color: #fff; }
         #tienda .section-title { color: #fff; }
@@ -236,7 +259,8 @@
             .hero-img-main { border-radius: 32px; }
             .hero-card { left: 8px; bottom: 16px; }
             section { padding: 64px 24px; }
-            .tips-grid, .blog-grid { grid-template-columns: 1fr; }
+            .tips-grid, .blog-grid, .cluster-grid { grid-template-columns: 1fr; }
+            .cluster-card.pillar { grid-column: auto; }
             .blog-card.featured { grid-row: auto; }
             .shop-grid { grid-template-columns: 1fr 1fr; }
             .stats { gap: 40px; padding: 32px 24px; }
@@ -278,7 +302,12 @@
             <div class="hero-dot hero-dot-1"></div>
             <div class="hero-dot hero-dot-2"></div>
             <div class="hero-dot hero-dot-3"></div>
-            <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=700&q=80" alt="Chica glam cute" class="hero-img-main">
+            <!-- imagen anterior: https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=700&q=80 (alt: "Chica glam cute") -->
+            <picture>
+                <source type="image/webp" srcset="/img/portada-nueva-600.webp 600w, /img/portada-nueva.webp 912w" sizes="(max-width: 900px) 90vw, 480px">
+                <source type="image/jpeg" srcset="/img/portada-nueva-600.jpg 600w, /img/portada-nueva.jpg 912w" sizes="(max-width: 900px) 90vw, 480px">
+                <img src="/img/portada-nueva.jpg" width="912" height="1136" alt="Chica joven con rizo natural y maquillaje suave - CuteGlamGirl" class="hero-img-main" fetchpriority="high">
+            </picture>
             <div class="hero-card">
                 <div class="hero-card-icon">🌟</div>
                 <div class="hero-card-text">
@@ -435,6 +464,44 @@
                     <a href="#" onclick="showArticle('confianza');return false;" class="read-link">Leer ahora →</a>
                 </div>
             </div>
+        </div>
+
+        <!-- CLÚSTER EVERGREEN: Confianza y crecimiento (páginas reales /blog/[slug]) -->
+        <div class="cluster-head">
+            <div class="section-tag">💗 Confianza y crecimiento</div>
+            <h3>Lo que tu yo del futuro<br>te va a agradecer</h3>
+        </div>
+        <div class="cluster-grid">
+            <a class="cluster-card pillar" href="/blog/cosas-que-disfrutar-en-la-adolescencia/">
+                <span class="c-tag">Confianza y crecimiento</span>
+                <h3>5 cosas que tu yo del futuro te va a agradecer haber disfrutado</h3>
+                <span class="c-read">Leer &#8594;</span>
+            </a>
+            <a class="cluster-card" href="/blog/dejar-de-preocuparte-por-lo-que-piensan/">
+                <span class="c-tag">Confianza y crecimiento</span>
+                <h3>Cómo dejar de preocuparte por lo que piensan los demás</h3>
+                <span class="c-read">Leer &#8594;</span>
+            </a>
+            <a class="cluster-card" href="/blog/llevarte-mejor-con-tu-familia/">
+                <span class="c-tag">Confianza y crecimiento</span>
+                <h3>Cómo llevarte mejor con tu familia sin dejar de ser tú</h3>
+                <span class="c-read">Leer &#8594;</span>
+            </a>
+            <a class="cluster-card" href="/blog/como-ser-mas-valiente/">
+                <span class="c-tag">Confianza y crecimiento</span>
+                <h3>Cómo ser más valiente y vencer la vergüenza</h3>
+                <span class="c-read">Leer &#8594;</span>
+            </a>
+            <a class="cluster-card" href="/blog/que-aprender-en-la-adolescencia/">
+                <span class="c-tag">Confianza y crecimiento</span>
+                <h3>Qué vale la pena aprender en la adolescencia</h3>
+                <span class="c-read">Leer &#8594;</span>
+            </a>
+            <a class="cluster-card" href="/blog/superar-drama-escuela/">
+                <span class="c-tag">Confianza y crecimiento</span>
+                <h3>Cómo superar un drama de la escuela o un corazón roto</h3>
+                <span class="c-read">Leer &#8594;</span>
+            </a>
         </div>
     </section>
 
@@ -715,7 +782,11 @@
 
     <!-- SOBRE NOSOTRAS -->
     <section id="nosotras">
-        <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=300&q=80" alt="CuteGlamGirl" class="about-img">
+        <!-- imagen anterior: https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=300&q=80 (alt: "CuteGlamGirl") -->
+        <picture>
+            <source type="image/webp" srcset="/img/portada-nueva-300.webp">
+            <img src="/img/portada-nueva-300.jpg" width="300" height="374" alt="Chica joven con rizo natural y maquillaje suave - CuteGlamGirl" class="about-img" loading="lazy">
+        </picture>
         <div class="section-tag" style="background:#ffffff25;color:#fff;">💕 Sobre Mí</div>
         <h2 class="section-title">¡Hola! Soy CuteGlamGirl ✨</h2>
         <p>Tengo 13 años y amo todo lo cute y glam. Mi papá y yo creamos este espacio para compartir tips reales, fáciles y que siempre funcionan. Sin modas de una semana — solo consejos que te acompañan para siempre.</p>
