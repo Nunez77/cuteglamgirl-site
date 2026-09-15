@@ -13,3 +13,6 @@ Thumbs.db
 *.swp
 *.swo
 *~
+
+# Mascots de Nati: se suben por scp al VPS, no van en git
+img/mascots/

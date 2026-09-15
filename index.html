@@ -290,6 +290,16 @@
         @media (max-width: 380px) {
             .nav-logo > span { display: none; }
         }
+
+        /* MASCOTS de Nati: decoración flotante, ocultos en pantallas menores a 768px */
+        .mascot { position: absolute; pointer-events: none; z-index: 10; height: auto; }
+        .mascot-tummy { bottom: -40px; right: 5%; width: 120px; opacity: 0.92; }
+        .mascot-timmy { top: -20px; left: -10px; width: 90px; opacity: 0.85; transform: rotate(-8deg); }
+        .mascot-tommy { bottom: 10px; left: 3%; width: 100px; opacity: 0.88; transform: rotate(5deg); }
+        #tips, #rutina { position: relative; }
+        /* El hero recorta con overflow:hidden; en escritorio de dos columnas se abre para que Tummy sobresalga */
+        @media (min-width: 901px) { .hero { overflow: visible; } }
+        @media (max-width: 768px) { .mascot { display: none; } }
     </style>
 </head>
 <body>
@@ -319,6 +329,7 @@
 
     <!-- HERO -->
     <section id="inicio" class="hero">
+        <img src="/img/mascots/tummy-web.png" alt="Tummy, el gato de CuteGlamGirl" class="mascot mascot-tummy" width="120" height="165">
         <div>
             <div class="hero-badge">✨ Tips que realmente funcionan</div>
             <h2>Belleza real.<br>Sin filtros.<br><em>Sin gastar de más.</em></h2>
@@ -370,6 +381,7 @@
 
     <!-- TIPS -->
     <section id="tips">
+        <img src="/img/mascots/timmy-web.png" alt="Timmy" class="mascot mascot-timmy" width="90" height="140">
         <div class="tips-header">
             <div>
                 <div class="section-tag">✨ Evergreen Tips</div>
@@ -454,6 +466,7 @@
 
     <!-- RUTINA BÁSICA TEEN: 4 pasos (afiliados Amazon, post completo en /blog/rutina-basica-teen/) -->
     <section id="rutina" style="background:#fff;padding:4rem 1.5rem;">
+      <img src="/img/mascots/tommy-web.png" alt="Tommy" class="mascot mascot-tommy" width="100" height="154">
       <div style="max-width:1100px;margin:0 auto;">
 
         <div style="text-align:center;margin-bottom:2.5rem;">
