@@ -16,3 +16,6 @@ Thumbs.db
 
 # Mascots de Nati: se suben por scp al VPS, no van en git
 img/mascots/
+
+# Fotos de producto (ASIN.webp): se suben por scp al VPS, no van en git
+img/productos/
