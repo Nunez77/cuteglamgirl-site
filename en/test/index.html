@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <!--
-  PRIVACIDAD (requisito, no limitación técnica):
-  El test corre 100% en el dispositivo de quien lo hace. Es JavaScript puro,
-  sin backend, sin cookies propias, sin localStorage ni sessionStorage, sin
-  formularios y sin ninguna petición de red con las respuestas. Las respuestas
-  viven en una variable en memoria y desaparecen al cerrar o recargar la pestaña.
-  Lo único del test que sale del dispositivo es el evento de GA4 'test_completado'
-  con el nombre del perfil, nunca las respuestas una por una.
-  Ojo: GA4 sí pone sus propias cookies de medición (_ga). Si algún día se quita
-  GA4 de esta página, la promesa se vuelve total y conviene decirlo en la página.
-  Si alguien agrega aquí guardado de respuestas, deja de cumplir lo prometido en
-  la página. No lo agregues.
+  PRIVACY (a requirement, not a technical limitation):
+  This quiz runs 100% on the visitor's device. Plain JavaScript, no backend,
+  no cookies of its own, no localStorage or sessionStorage, no forms and no
+  network request carrying answers. Answers live in a variable in memory and
+  disappear when the tab is closed or reloaded.
+  The only thing the quiz sends out is the GA4 event 'test_completado' with the
+  profile name, never the individual answers.
+  Heads up: GA4 does set its own measurement cookies (_ga). If GA4 is ever
+  removed from this page, the promise becomes absolute and the page should say so.
+  If anyone adds answer storage here, the page stops keeping what it promises.
+  Do not add it.
 -->
-<html lang="es">
+<html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZE4W3K2QXL"></script>
@@ -24,18 +24,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>¿Cómo eres con tus amigas? | CuteGlamGirl</title>
-  <meta name="description" content="Test de 10 preguntas sobre tu estilo de amistad. Corre en tu dispositivo y no guardamos ninguna respuesta.">
-  <link rel="canonical" href="https://cuteglamgirl.com/test/">
+  <title>What kind of friend are you? | CuteGlamGirl</title>
+  <meta name="description" content="A 10 question test about your friendship style. It runs on your device and we do not save any answers.">
+  <link rel="canonical" href="https://cuteglamgirl.com/en/test/">
   <link rel="alternate" hreflang="es" href="https://cuteglamgirl.com/test/">
   <link rel="alternate" hreflang="en" href="https://cuteglamgirl.com/en/test/">
   <link rel="alternate" hreflang="x-default" href="https://cuteglamgirl.com/test/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="CuteGlamGirl">
-  <meta property="og:locale" content="es_MX">
-  <meta property="og:title" content="¿Cómo eres con tus amigas?">
-  <meta property="og:description" content="10 preguntas. Sin respuestas correctas. Solo tú.">
-  <meta property="og:url" content="https://cuteglamgirl.com/test/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="What kind of friend are you?">
+  <meta property="og:description" content="10 questions. No right answers. Just you.">
+  <meta property="og:url" content="https://cuteglamgirl.com/en/test/">
   <meta property="og:image" content="https://cuteglamgirl.com/img/portada-nueva.jpg">
   <meta name="theme-color" content="#FF6B9D">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -93,7 +93,7 @@
     .restart { display:block; width:100%; font-family:inherit; font-size:16px; font-weight:700; color:var(--pink); background:#fff; border:2px solid var(--pink); border-radius:999px; padding:14px; margin-top:18px; cursor:pointer; }
     .restart:hover { background:var(--pink); color:#fff; }
     .mascot { position:absolute; right:4%; bottom:18px; width:110px; height:auto; opacity:.9; pointer-events:none; z-index:0; }
-    /* En celular Tummy no flota (taparía el contenido): baja al final, centrado */
+    /* On phones Tummy does not float (it would cover content): it sits at the end, centered */
     @media (max-width:768px) { .mascot { position:static; display:block; margin:6px auto 0; width:88px; opacity:.85; } }
     footer { text-align:center; padding:26px 20px 40px; color:var(--gray); font-size:13px; line-height:1.6; }
     footer a { color:var(--pink); font-weight:700; text-decoration:none; }
@@ -102,123 +102,123 @@
 </head>
 <body>
   <header class="top">
-    <a class="brand" href="/">&#10024; CuteGlamGirl</a>
-    <a class="back-home" href="/">&#8592; Volver al inicio</a>
+    <a class="brand" href="/en/">&#10024; CuteGlamGirl</a>
+    <a class="back-home" href="/en/">&#8592; Back to home</a>
   </header>
 
   <main class="wrap">
     <div class="head">
-      <h1>¿Cómo eres con tus amigas?</h1>
-      <p>10 preguntas. Sin respuestas correctas. Solo tú.</p>
-      <p class="privacy"><span aria-hidden="true">&#128274;</span><span>Este test corre en tu dispositivo. No guardamos tus respuestas. Solo registramos (de forma anónima) que terminaste el test.</span></p>
+      <h1>What kind of friend are you?</h1>
+      <p>10 questions. No right answers. Just you.</p>
+      <p class="privacy"><span aria-hidden="true">&#128274;</span><span>This test runs on your device. We don&#39;t save your answers. We only record (anonymously) that you finished the test.</span></p>
     </div>
 
     <section id="quiz" aria-live="polite">
       <div class="progress" role="progressbar" aria-valuemin="1" aria-valuemax="10" aria-valuenow="1" id="progress">
         <div class="bar" id="bar"></div>
       </div>
-      <p class="step" id="step">Pregunta 1 de 10</p>
+      <p class="step" id="step">Question 1 of 10</p>
       <div class="card fade" id="card">
         <h2 class="q" id="pregunta"></h2>
         <div class="opts" id="opciones"></div>
-        <div class="nav-row"><button class="back-btn" id="atras" type="button" hidden>&#8592; Atrás</button></div>
+        <div class="nav-row"><button class="back-btn" id="atras" type="button" hidden>&#8592; Back</button></div>
       </div>
     </section>
 
     <section id="resultado" hidden>
       <div id="perfiles"></div>
       <div class="cta">
-        <p class="lead">¿Te identificaste con tu perfil? Este libro habla exactamente de esto:</p>
-        <a class="btn-amz" href="https://www.amazon.com/dp/B0H5TX1X8G?tag=khcxrrexvpl-20" target="_blank" rel="nofollow sponsored" data-asin="B0H5TX1X8G">Ver en Amazon</a>
-        <p class="book">Guía de Campo Para Entender a los Humanos, de Mara Solís</p>
-        <p class="aff">Enlace de afiliada de Amazon: si compras, ganamos una pequeña comisión sin costo extra para ti.</p>
+        <p class="lead">Did your result resonate? This book talks about exactly this:</p>
+        <a class="btn-amz" href="https://www.amazon.com/dp/B0H5TX1X8G?tag=khcxrrexvpl-20" target="_blank" rel="nofollow sponsored" data-asin="B0H5TX1X8G">See on Amazon</a>
+        <p class="book">A Field Guide to Understanding Humans, by Mara Sol&iacute;s</p>
+        <p class="aff">Amazon affiliate link: if you buy, we earn a small commission at no extra cost to you.</p>
       </div>
-      <button class="restart" id="reiniciar" type="button">Volver a tomar el test</button>
-      <p class="privacy" style="margin-top:18px;"><span aria-hidden="true">&#128274;</span><span>Este test corre en tu dispositivo. No guardamos tus respuestas. Solo registramos (de forma anónima) que terminaste el test.</span></p>
+      <button class="restart" id="reiniciar" type="button">Take the test again</button>
+      <p class="privacy" style="margin-top:18px;"><span aria-hidden="true">&#128274;</span><span>This test runs on your device. We don&#39;t save your answers. We only record (anonymously) that you finished the test.</span></p>
     </section>
   </main>
 
-  <img class="mascot" src="/img/mascots/tummy-web.png" alt="Tummy, el gato de CuteGlamGirl" width="110" height="140">
+  <img class="mascot" src="/img/mascots/tummy-web.png" alt="Tummy, CuteGlamGirl&#39;s cat" width="110" height="140">
 
   <footer>
-    <p><a href="/">cuteglamgirl.com</a></p>
+    <p><a href="/en/">cuteglamgirl.com</a></p>
   </footer>
 
   <script>
   (function () {
     var PREGUNTAS = [
-      { t: 'Tu amiga está pasando un momento difícil. ¿Qué haces primero?', o: [
-        ['A', 'Le escribo para ver cómo está, aunque no sepa qué decir'],
-        ['B', 'Le propongo salir a distraernos, algo diferente'],
-        ['C', 'La escucho sin interrumpir hasta que ella quiera parar'],
-        ['D', 'Le doy espacio pero le hago saber que aquí estoy'] ] },
-      { t: '¿Cómo suelen empezar los planes con tus amigas?', o: [
-        ['A', 'Alguien propone algo y yo organizo los detalles'],
-        ['B', 'Generalmente soy yo la que dice ¿qué hacemos hoy?'],
-        ['C', 'Espero a ver qué quieren las demás y me adapto'],
-        ['D', 'Me avisan y voy si puedo, no me gusta planear con mucho tiempo'] ] },
-      { t: 'Una amiga dice algo que te molestó. ¿Qué haces?', o: [
-        ['A', 'Lo pienso bien antes de decir algo, no quiero drama'],
-        ['B', 'Se lo digo directo, prefiero aclarar las cosas rápido'],
-        ['C', 'Primero entiendo por qué lo dijo, luego hablo con ella'],
-        ['D', 'Lo proceso sola y si sigue molestándome, entonces lo menciono'] ] },
-      { t: '¿Cómo describes tu grupo de amigas?', o: [
-        ['A', 'Somos pocas pero muy cercanas, nos conocemos bien'],
-        ['B', 'Somos muchas y siempre hay algo nuevo pasando'],
-        ['C', 'Varía, tengo amigas de diferentes lados de mi vida'],
-        ['D', 'Tengo una o dos amigas muy importantes y el resto son conocidas'] ] },
-      { t: '¿Qué tan seguido hablas con tus amigas?', o: [
-        ['A', 'Casi todos los días, aunque sea un mensaje rápido'],
-        ['B', 'Mucho, pero en ráfagas, a veces todo el día y a veces nada'],
-        ['C', 'Depende de quién necesite hablar, siempre estoy disponible'],
-        ['D', 'Cuando hay algo que contar, no necesito hablar a diario'] ] },
-      { t: 'Una amiga te cancela los planes de último momento. ¿Cómo reaccionas?', o: [
-        ['A', 'Me molesta un poco pero entiendo, le digo que no hay problema'],
-        ['B', 'Busco a alguien más para no quedarme sin planes'],
-        ['C', 'Le pregunto si está bien, a veces cancelar tiene una razón'],
-        ['D', 'Perfectamente, aproveché el tiempo para mí'] ] },
-      { t: '¿Cuál es tu superpoder con tus amigas?', o: [
-        ['A', 'Siempre estoy cuando me necesitan'],
-        ['B', 'Hago que todo sea más divertido'],
-        ['C', 'Saben que pueden contarme cualquier cosa'],
-        ['D', 'Las quiero mucho aunque no necesite estar con ellas todo el tiempo'] ] },
-      { t: 'Una amiga nueva quiere entrar al grupo. ¿Cómo lo vives?', o: [
-        ['A', 'Me toma tiempo confiar, pero si las demás la quieren, la acepto'],
-        ['B', 'Me emociona, más amigas más planes'],
-        ['C', 'Intento conocerla bien antes de opinar'],
-        ['D', 'No me afecta mucho, cada quien trae sus propias amigas'] ] },
-      { t: '¿Qué cosa haría que una amistad se acabara para ti?', o: [
-        ['A', 'Que me falle cuando más la necesito'],
-        ['B', 'Que sea muy negativa o que apague el ánimo constantemente'],
-        ['C', 'Que cuente algo que le conté en confianza'],
-        ['D', 'Que me exija más presencia de la que puedo dar'] ] },
-      { t: '¿Cómo sabes que alguien es tu amiga de verdad?', o: [
-        ['A', 'Porque ha estado ahí en los momentos difíciles'],
-        ['B', 'Porque nos la pasamos increíble juntas'],
-        ['C', 'Porque siente que puede contarme todo'],
-        ['D', 'Porque me acepta aunque no siempre esté disponible'] ] }
+      { t: 'Your friend is going through something hard. What do you do first?', o: [
+        ['A', 'I text her to check in, even if I have no idea what to say'],
+        ['B', 'I suggest we go do something to take her mind off it'],
+        ['C', 'I listen without interrupting for as long as she needs'],
+        ['D', 'I give her space but let her know I am right here'] ] },
+      { t: 'How do plans with your friends usually start?', o: [
+        ['A', 'Someone suggests something and I sort out the details'],
+        ['B', 'I am usually the one asking what are we doing today'],
+        ['C', 'I wait to see what everyone else wants and go with it'],
+        ['D', 'They text me and I show up if I can, I do not like planning far ahead'] ] },
+      { t: 'A friend says something that bothers you. What do you do?', o: [
+        ['A', 'I think it through before saying anything, I do not want drama'],
+        ['B', 'I tell her straight up, I would rather clear it up fast'],
+        ['C', 'First I figure out why she said it, then I talk to her'],
+        ['D', 'I process it on my own and if it still bugs me, then I bring it up'] ] },
+      { t: 'How would you describe your friend group?', o: [
+        ['A', 'We are a small group but really close, we know each other well'],
+        ['B', 'There are a lot of us and something new is always happening'],
+        ['C', 'It varies, I have friends from different parts of my life'],
+        ['D', 'I have one or two friends who matter a lot and the rest are people I know'] ] },
+      { t: 'How often do you talk to your friends?', o: [
+        ['A', 'Almost every day, even if it is just a quick text'],
+        ['B', 'A lot, but in bursts, some days nonstop and some days nothing'],
+        ['C', 'It depends on who needs to talk, I am always around'],
+        ['D', 'When there is something to tell, I do not need to talk every day'] ] },
+      { t: 'A friend cancels plans on you last minute. How do you react?', o: [
+        ['A', 'It bugs me a little but I get it, I tell her it is fine'],
+        ['B', 'I find someone else so I do not end up with no plans'],
+        ['C', 'I ask if she is okay, sometimes canceling has a reason'],
+        ['D', 'Totally fine, I used that time for myself'] ] },
+      { t: 'What is your superpower as a friend?', o: [
+        ['A', 'I am always there when they need me'],
+        ['B', 'I make everything way more fun'],
+        ['C', 'They know they can tell me anything'],
+        ['D', 'I love them a lot even when I am not around all the time'] ] },
+      { t: 'A new friend wants to join the group. How do you feel about it?', o: [
+        ['A', 'It takes me a while to trust her, but if the others like her, I am in'],
+        ['B', 'I am excited, more friends more plans'],
+        ['C', 'I try to get to know her before I have an opinion'],
+        ['D', 'It does not really affect me, everyone brings their own friends'] ] },
+      { t: 'What would end a friendship for you?', o: [
+        ['A', 'Letting me down when I need her most'],
+        ['B', 'Being really negative or killing the mood all the time'],
+        ['C', 'Telling people something I shared in confidence'],
+        ['D', 'Asking for more of my time than I can give'] ] },
+      { t: 'How do you know someone is a real friend?', o: [
+        ['A', 'Because she has been there in the hard moments'],
+        ['B', 'Because we have an amazing time together'],
+        ['C', 'Because she feels like she can tell me anything'],
+        ['D', 'Because she takes me as I am even when I am not always available'] ] }
     ];
 
     var PERFILES = {
-      A: { emoji: '⚓', nombre: 'La Ancla',
-        desc: 'Eres la amiga que no necesita decir mucho para que las demás sepan que está. Tu presencia tiene peso. Cuando alguien te importa, lo demuestras con hechos, no solo con palabras. Las amigas que te conocen bien saben que pueden contar contigo en serio.',
-        fort: 'Eres confiable de verdad, no solo de nombre.',
-        nota: 'Te importa tanto no fallarle a los demás que a veces olvidas pedirle a alguien que tampoco te falle a ti.' },
-      B: { emoji: '✨', nombre: 'La Chispa',
-        desc: 'Eres la que hace que las cosas pasen. Sin ti, cuántos planes no existirían, cuántas noches no habrían sido lo que fueron. Tienes una energía que la gente busca sin siempre saber por qué. No es solo que seas divertida, es que haces sentir a la gente que vale la pena estar viva.',
-        fort: 'Enciendes el ánimo de las personas a tu alrededor.',
-        nota: 'Moverse tan rápido puede hacer que algunas conversaciones importantes se queden pendientes.' },
-      C: { emoji: '🌙', nombre: 'La Escucha',
-        desc: 'Eres la amiga que la gente busca cuando necesita hablar de verdad. Tienes algo que pocas personas tienen: sabes estar presente sin necesitar protagonizar. Las cosas que te cuentan se quedan contigo. Eso no es poca cosa, es uno de los regalos más raros que existe.',
-        fort: 'Las personas se sienten seguras contigo.',
-        nota: 'Escuchas tanto a los demás que a veces nadie te pregunta cómo estás tú.' },
-      D: { emoji: '🦋', nombre: 'La Libre',
-        desc: 'Quieres a tus amigas y ellas lo saben, aunque no necesites demostrarlo todo el tiempo. Tienes una vida interior rica y no dependes de la aprobación constante de los demás para sentirte bien. Eso es más difícil de lograr de lo que parece.',
-        fort: 'Eres auténtica, no finges cercanía que no sientes.',
-        nota: 'Algunas personas pueden interpretar tu independencia como distancia, cuando en realidad es tu forma de querer.' }
+      A: { emoji: '⚓', nombre: 'The Anchor',
+        desc: 'You are the friend who does not need to say much for everyone to know you are there. Your presence has weight. When someone matters to you, you show it with actions, not just words. The friends who know you well know they can count on you for real.',
+        fort: 'You are reliable for real, not just in theory.',
+        nota: 'You care so much about not letting people down that you sometimes forget to ask someone not to let you down either.' },
+      B: { emoji: '✨', nombre: 'The Spark',
+        desc: 'You are the one who makes things happen. Without you, how many plans would never exist, how many nights would not have been what they were. You have an energy people look for without always knowing why. It is not just that you are fun, it is that you make people feel like being alive is worth it.',
+        fort: 'You lift the mood of everyone around you.',
+        nota: 'Moving that fast can leave some important conversations unfinished.' },
+      C: { emoji: '🌙', nombre: 'The Listener',
+        desc: 'You are the friend people come to when they need to talk for real. You have something few people have: you know how to be present without needing the spotlight. The things people tell you stay with you. That is not a small thing, it is one of the rarest gifts there is.',
+        fort: 'People feel safe with you.',
+        nota: 'You listen to everyone else so much that sometimes nobody asks how you are doing.' },
+      D: { emoji: '🦋', nombre: 'The Free Spirit',
+        desc: 'You love your friends and they know it, even if you do not need to prove it all the time. You have a rich inner life and you do not depend on constant approval to feel good about yourself. That is harder to pull off than it looks.',
+        fort: 'You are authentic, you do not fake closeness you do not feel.',
+        nota: 'Some people read your independence as distance, when it is really your way of caring.' }
     };
 
-    // Las respuestas viven solo aquí, en memoria. No se guardan ni se envían.
+    // Answers live only here, in memory. They are never saved or sent anywhere.
     var respuestas = [];
     var i = 0;
 
@@ -245,7 +245,7 @@
         b.addEventListener('click', function () { responder(op[0]); });
         elOpciones.appendChild(b);
       });
-      elPaso.textContent = 'Pregunta ' + (i + 1) + ' de ' + PREGUNTAS.length;
+      elPaso.textContent = 'Question ' + (i + 1) + ' of ' + PREGUNTAS.length;
       elBarra.style.width = ((i + 1) / PREGUNTAS.length * 100) + '%';
       elProgress.setAttribute('aria-valuenow', String(i + 1));
       btnAtras.hidden = i === 0;
@@ -277,7 +277,7 @@
       if (gana.length > 1) {
         var aviso = document.createElement('p');
         aviso.className = 'res-tie';
-        aviso.textContent = 'Quedaste entre ' + gana.length + ' perfiles, y las dos partes son tuyas.';
+        aviso.textContent = 'You landed between ' + gana.length + ' profiles, and both parts are yours.';
         elPerfiles.appendChild(aviso);
       }
       gana.forEach(function (k) {
@@ -296,12 +296,12 @@
         bloque.appendChild(d);
         var f = document.createElement('div');
         f.className = 'res-box fort';
-        f.innerHTML = '<strong>Fortaleza</strong><span></span>';
+        f.innerHTML = '<strong>Strength</strong><span></span>';
         f.querySelector('span').textContent = p.fort;
         bloque.appendChild(f);
         var n = document.createElement('div');
         n.className = 'res-box nota';
-        n.innerHTML = '<strong>Algo que a veces pasa</strong><span></span>';
+        n.innerHTML = '<strong>Something that happens sometimes</strong><span></span>';
         n.querySelector('span').textContent = p.nota;
         bloque.appendChild(n);
         elPerfiles.appendChild(bloque);
